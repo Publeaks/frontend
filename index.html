@@ -8,7 +8,7 @@
     <link href="dist/toolkit-minimal.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
   </head>
-  <body>
+  <body id="top" data-spy="scroll" data-target="#navbar" data-offset="86">
 
     <div class="modal fade" id="security-modal" tabindex="-1" role="dialog">
       <div class="modal-dialog" role="document">
@@ -16,23 +16,24 @@
           <div class="modal-header">
             <h5 class="modal-title">
               <span class="icon icon-warning"></span>
-              Security warning</h5>
+              Veiligheidswaarschuwing
+            </h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
           <div class="modal-body">
-            <p>Het lijkt erop dat u geen gebruik maakt van de Tor Browser.</p>
+            <p>Het lijkt erop dat je geen gebruik maakt van de Tor Browser. <a href="https://www.torproject.org/download/download-easy.html.en" target="_blank"><span class="icon icon-log-out"></span> Download en installeer de Tor Browser</a> om je anonimiteit te waarborgen.</p>
           </div>
           <div class="modal-footer">
-            <button type="button" class="btn btn-danger">Doorgaan</button>
-            <button type="button" class="btn btn-secondary" data-dismiss="modal">Annuleren</button>
+            <a class="btn btn-danger" href="#"><span class="icon icon-warning"> Doorgaan</a>
+            <button type="button" class="btn btn-secondary" data-dismiss="modal"><span class="icon icon-back"> Annuleren</button>
           </div>
         </div>
       </div>
     </div>
 
-    <div class="block block-inverse text-center">
+    <div class="block block-inverse text-center" id="jumbotron">
       <div class="block-foreground">
         <h1 class="block-title">Publeaks</h1>
         <h4>Veilig en anoniem informatie delen met de pers</h4>
@@ -52,7 +53,7 @@
       </div>
     </div>
 
-    <nav class="navbar sticky-top justify-content-between navbar-light bg-light navbar-padded navbar-expand-sm">
+    <nav class="navbar sticky-top justify-content-between navbar-light bg-light navbar-padded navbar-expand-sm" id="navbar">
       <!-- Brand navbar-brang
         <a class="navbar-brand" href="#">
           <img style="margin-top: -20px; padding 0px 0px;" src="img/logo.png" height="66" alt="Publeaks">
@@ -60,38 +61,34 @@
       -->
       <ul class="nav nav-bordered">
         <li class="nav-item">
-          <a class="smooth-scrolling nav-link active" href="#" data-destination="html, body">Publeaks</a>
+          <a class="smooth-scrolling nav-link active" href="#top">Publeaks</a>
         </li>
         <li class="nav-item">
-          <a class="smooth-scrolling nav-link" href="#media" data-destination="#media">Media</a>
+          <a class="smooth-scrolling nav-link" href="#media">Media</a>
         </li>
         <li class="nav-item">
-          <a class="smooth-scrolling nav-link" href="#klokkenluiders" data-destination="#klokkenluiders">Klokkenluiders</a>
+          <a class="smooth-scrolling nav-link" href="#klokkenluiders">Klokkenluiders</a>
         </li>
         <li class="nav-item">
-          <a class="smooth-scrolling nav-link" href="#veiligheid" data-destination="#veiligheid">Veiligheid</a>
+          <a class="smooth-scrolling nav-link" href="#veiligheid">Veiligheid</a>
         </li>
         <li class="nav-item">
-          <a class="smooth-scrolling nav-link" href="#uploaden" data-destination="#uploaden">Delen</a>
+          <a class="smooth-scrolling nav-link" href="#uploaden">Delen</a>
         </li>
         <li class="nav-item">
-          <a class="smooth-scrolling nav-link" href="#about" data-destination="#about">Over Stichting Publeaks</a>
+          <a class="smooth-scrolling nav-link" href="#about">Over Stichting Publeaks</a>
         </li>
       </ul>
-      <ul class="nav nav-pills">
-        <li class="nav-item">
-          <a class="nav-link" href="#">
-            <span class="icon icon-login"></span>
-            Inloggen
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active upload">
-            <span class="icon icon-upload"></span>
-            Documenten uploaden
-          </a>
-        </li>
-      </ul>
+      <div>
+        <button class="btn btn-outline-primary login">
+          <span class="icon icon-login"></span>
+          Inloggen
+        </button>
+        <button class="btn btn-primary upload text-white">
+          <span class="icon icon-upload"></span>
+          Documenten uploaden
+        </button>
+      </div>
     </nav>
 
     <div class="block">
@@ -114,10 +111,33 @@
       <div class="container">
         <div class="row">
           <div class="col text-center">
-            <h2 class="block-title">Wij werken samen met de meest betrouwbare mediapartners.</h2>
+            <h2 class="block-title display-4">Wij werken samen met de meest betrouwbare mediapartners.</h2>
           </div>
         </div>
-        <div class="row justify-content-center">
+        <div class="row justify-content-center pt-4">
+          <div class="col-2">
+            <img class="d-block img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
+          </div>
+          <div class="col-2">
+            <img class="d-block img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
+          </div>
+          <div class="col-2">
+            <img class="d-block img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
+          </div>
+          <div class="col-2">
+            <img class="d-block img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
+          </div>
+          <div class="col-2">
+            <img class="d-block img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
+          </div>
+          <div class="col-2">
+            <img class="d-block img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
+          </div>
+        </div>
+        <div class="row justify-content-center pt-4">
+          <div class="col-2">
+            <img class="d-block img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
+          </div>
           <div class="col-2">
             <img class="d-block img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
@@ -146,13 +166,40 @@
         </ol>
         <div class="carousel-inner" role="listbox">
           <div class="carousel-item active">
-            <img class="d-block img-fluid" src="https://placehold.it/1140x500/fff/333" alt="First slide">
+            <img class="d-block img-fluid w-100" src="img/banners/volkskrant-3.jpg" alt="First slide">
+            <div class="carousel-caption d-none d-md-block">
+              <blockquote class="pull-quote">
+                <img class="rounded-circle" src="https://placehold.it/100x100/fff/333">
+                <p>
+                  “Publeaks stelt klokkenluiders in staat om in samenwerking met de Volkskrant misstanden te onthullen die anders verborgen zouden blijven. Zonder dat zij zelf risico lopen leveren zij op deze manier een belangrijke bijdrage aan onze samenleving.”
+                </p>
+                <cite>Philippe Remarque, hoofdredacteur de Volkskrant</cite>
+              </blockquote>
+            </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block img-fluid" src="https://placehold.it/1140x500/fff/333" alt="Second slide">
+            <img class="d-block img-fluid w-100" src="img/banners/volkskrant-2.jpg" alt="Second slide">
+            <div class="carousel-caption d-none d-md-block">
+              <blockquote class="pull-quote">
+                <img class="rounded-circle" src="https://placehold.it/100x100/fff/333">
+                <p>
+                  “Lorem ipsum doler sit amer..”
+                </p>
+                <cite>Dikkertje Dap, Dierenverzorger</cite>
+              </blockquote>
+            </div>
           </div>
           <div class="carousel-item">
-            <img class="d-block img-fluid" src="https://placehold.it/1140x500/fff/333" alt="Third slide">
+            <img class="d-block img-fluid w-100" src="img/banners/volkskrant-1.jpg" alt="Third slide">
+            <div class="carousel-caption d-none d-md-block">
+              <blockquote class="pull-quote">
+                <img class="rounded-circle" src="https://placehold.it/100x100/fff/333">
+                <p>
+                  “Lorem ipsum doler sit amer..”
+                </p>
+                <cite>Dikkertje Dap, Dierenverzorger</cite>
+              </blockquote>
+            </div>
           </div>
         </div>
         <a class="carousel-control-prev" href="#carousel-testimonials" role="button" data-slide="prev">
@@ -170,24 +217,36 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h2 class="block-title">Informatie delen met de pers.</h2>
+            <p class="block-title display-4">Informatie delen met de pers.</p>
           </div>
         </div>
         <div class="row">
           <div class="col">
-            <img class="d-block img-fluid" src="https://placehold.it/400x300/fff/333" alt="">
-            <h4>Iets belangrijks vertellen</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="card">
+              <img class="card-img-top" src="img/iets-belangrijks-vertellen.jpg" alt="Iets belangrijks vertellen">
+              <div class="card-body">
+                <p class="card-title h1">Iets belangrijks vertellen</p>
+                <p class="card-text lead">Een gezonde democratie kan niet zonder transparantie en dat kan niet zonder jou.</p>
+              </div>
+            </div>
           </div>
           <div class="col">
-            <img class="d-block img-fluid" src="https://placehold.it/400x300/fff/333" alt="">
-            <h4>Stille held achter het nieuws</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="card">
+              <img class="card-img-top" src="img/stille-held-achter-het-nieuws.jpg" alt="Stille held achter het nieuws">
+              <div class="card-body">
+                <p class="card-title h1">Stille held</p>
+                <p class="card-text lead">Wat men niet weet, kan men niet veranderen. Door aan de bel te trekken kan dat wel.</p>
+              </div>
+            </div>
           </div>
           <div class="col">
-            <img class="d-block img-fluid" src="https://placehold.it/400x300/fff/333" alt="">
-            <h4>Niet alleen staan</h4>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            <div class="card">
+              <img class="card-img-top" src="img/niet-alleen-staan.jpg" alt="Niet alleen staan">
+              <div class="card-body">
+                <p class="card-title h1">Niet alleen staan</p>
+                <p class="card-text lead">Alleen samen kunnen we misstanden aan de kaak stellen, actie ondernemen en iets veranderen.</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -195,41 +254,89 @@
 
     <div class="block" id="veiligheid">
       <div class="container">
-        <div class="row justify-content-between">
+        <div class="row">
+          <div class="col">
+            <p class="block-title display-4">Op internet ben je niet zomaar veilig en anoniem.</p>
+          </div>
+        </div>
+        <div class="row justify-content-between align-items-center">
           <div class="col-4">
-            <h2 class="block-title">Op internet ben je niet zomaar veilig en anoniem.</h2>
-            <h4>
+            <h2>
               <strong class="text-ribbon text-ribbon-primary text-white">
                 <span>Leer in drie simpele stappen hoe je ongezien van Publeaks gebruik kan maken.</span>
               </strong>
-            </h4>
+            </h2>
           </div>
           <div class="col-7">
             <ul class="featured-list featured-list-bordered">
-              <li class="">
+              <li class="pb-4">
                 <div class="featured-list-icon bg-primary text-white">
                   <!-- span class="icon icon-shield"></span -->
                   <span class="icon icon-check"></span>
                 </div>
-                <img class="img-fluid img-thumbnail float-right" src="https://placehold.it/160x120/fff/333" alt="">
-                <h3>Veiligheid</h3>
-                <p>Lorem ipsum doler sit amet.</p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <h2>
+                        Veiligheid.
+                        <small class="text-muted">Publeaks zorgt ervoor dat je communicatie altijd veilig verloopt.</small>
+                      </h2>
+                    </div>
+                    <div class="col embed-responsive embed-responsive-16by9 w-50">
+                      <video class="embed-responsive-item" autoplay="false" muted="true" loop="false" controls="false">
+                        <source src="video/veiligheid.mp4" type="video/mp4">
+                        <source src="video/veiligheid.webm" type="video/webm">
+                        <source src="video/veiligheid.ogv" type="video/ogg">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="">
-                <img class="img-fluid img-thumbnail float-right" src="https://placehold.it/160x120/fff/333" alt="">
+              <li class="pb-4">
                 <div class="featured-list-icon">
                   <span class="icon icon-fingerprint"></span>
                 </div>
-                <h3>Anonimiteit</h3>
-                <p>Lorem ipsum doler sit amet.<br><br><br><br></p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <h2>
+                        Anoniem contact.
+                        <small class="text-muted">Het waarborgen van jouw privacy is van groot belang.</small>
+                      </h2>
+                    </div>
+                    <div class="col embed-responsive embed-responsive-16by9 w-50">
+                      <video class="embed-responsive-item" autoplay="false" muted="true" loop="false" controls="false">
+                        <source src="video/anoniem-contact.mp4" type="video/mp4">
+                        <source src="video/anoniem-contact.webm" type="video/webm">
+                        <source src="video/anoniem-contact.ogv" type="video/ogg">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                </div>
               </li>
-              <li class="">
-                <img class="img-fluid img-thumbnail float-right" src="https://placehold.it/160x120/fff/333" alt="">
+              <li>
                 <div class="featured-list-icon">
                   <span class="icon icon-users"></span>
                 </div>
-                <h3>Stille held achter het nieuws</h3>
-                <p>Lorem ipsum doler sit amet.<br><br><br><br></p>
+                <div class="container">
+                  <div class="row">
+                    <div class="col">
+                      <h2>Stille held.
+                        <small class="text-muted">Zoek niet de publicitet maar blijf de stille held achter het nieuws.</small>
+                      </h2>
+                    </div>
+                    <div class="col embed-responsive embed-responsive-16by9 w-50">
+                      <video class="embed-responsive-item" muted="true">
+                        <source src="video/stille-held.mp4" type="video/mp4">
+                        <source src="video/stille-held.webm" type="video/webm">
+                        <source src="video/stille-held.ogv" type="video/ogg">
+                        Your browser does not support the video tag.
+                      </video>
+                    </div>
+                  </div>
+                </div>
               </li>
             </ul>
           </div>
@@ -243,20 +350,84 @@
           <div class="col text-center">
             <h1 class="block-title">Publeaks</h1>
             <h2>Veilig en anoniem informatie delen met de pers.</h2>
-            <p>
-              <a class="btn btn-primary btn-lg text-white upload">
-                <span class="icon icon-upload"></span>
-                Documenten uploaden
-              </a>
-            </p>
+            <button class="btn btn-primary btn-lg upload text-white">
+              <span class="icon icon-upload"></span>
+              Documenten uploaden
+            </button>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-6">
+            <div class="callout">
+              <div class="callout-content">
+                <strong>Heeft u eerder een tip ingezonden?</strong>
+                Log in met uw geheime code om in contact te treden met de journalist.
+              </div>
+
+              <div class="callout-secondary">
+                <button class="btn btn-primary text-white login">
+                  <span class="icon icon-login"></span>
+                  Inloggen
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <div class="block block-inverse" id="about">
-      <h2 class="block-title">Stichting Publeaks</h2>
-      <h4 class="text-muted">Use the inverse modifier for working over dark images.</h4>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h2 class="block-title">Stichting Publeaks</h2>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <p><strong>Veilig en anoniem informatie delen met de pers</strong></p>
+            <p>In iedere samenleving vinden misstanden plaats. Heeft u informatie of kennis van zaken die niet in de haak zijn? Dan brengt Publeaks u in contact met de media. Hoe concreter de informatie, hoe groter de kans dat een journalist ermee aan de slag gaat. Publeaks verbergt de afzender, locatie en andere gegevens. Zo blijft de bron veilig en versterken we samen het controlerend vermogen van de media.</p>
+            <p><strong>Over Stichting Publeaks</strong></p>
+            <p>Stichting Publeaks heeft als doel (1) het versterken van het controlerend vermogen van de media, (2) het faciliteren en daarmee stimuleren van het delen van informatie met de media en (3) het aanbieden van een platform waarmee veilig en anoniem informatie kan worden gedeeld met de media.</p>
+            <p>Publeaks maakt het mogelijk voor houders van gevoelige informatie om op een veilige, anonieme en eenvoudige manier in contact te komen met de media. De stichting heeft geen enkele toegang tot de inhoud van documenten of rol in het contact tussen journalist en klokkenluider.</p>
+            <p>Door hun deelname aan Publeaks onderschrijven de media (1) de statutaire doelstellingen van Stichting Publeaks en (2) de Code van Bordeaux.</p>
+          </div>
+          <div class="col">
+            <p><strong>Juridisch</strong></p>
+            <ol>
+              <li>Stichting Publeaks is op geen enkele manier aansprakelijk voor de gevolgen van het delen van enigerlei informatie. De Aanbrenger en ontvangende journalistieke organisatie handelen beiden onder eigen verantwoordelijkheden.</li>
+              <li>Stichting Publeaks heeft op geen enkele manier toegang of anderzijds beschikking over materiaal dat via het systeem is verzonden. Noch heeft zij beschikking over gegevens van aanbrengers.</li>
+              <li>Stichting Publeaks slaat geen informatie op, bewerkt, noch selecteert de informatie in enigerlei vorm.</li>
+              <li>Stichting Publeaks is geen eigenaar van technologie of software en heeft geen toegang tot het systeem.</li>
+            </ol>
+            <p><strong>Links</strong></p>
+            <ul class="list-unstyled">
+              <li><a href="https://www.freepressunlimited.org/nl/" target="_blank">Free Press Unlimited</a></li>
+              <li><a href="https://www.svdj.nl/" target="_blank">Stimuleringsfonds voor de Journalistiek</a></li>
+              <li><a href="http://www.stdem.org/" target="_blank">Stichting Democratie en Media</a></li>
+              <li><a href="http://netdem.nl/en/" target="_blank">Netwerk Democratie</a></li>
+              <li><a href="https://huisvoorklokkenluiders.nl/" target="_blank">Huis voor Klokkenluiders</a></li>
+              <li><a href="https://greenhost.net/" target="_blank">Greenhost</a></li>
+            </ul>
+          </div>
+          <div class="col">
+            <p><strong>Adres</strong></p>
+            <pre class="text-white">
+Stichting Publeaks
+Weesperstraat 3
+1018 DN Amsterdam
+</pre>
+            <p><strong>Telefoonnummer</strong></p>
+<pre class="text-white">
++31 20 8000 400
+</pre>
+            <p><strong>Donaties</strong></p>
+            <p>Stichting Publeaks heeft een beperkte begroting die wordt opgebracht door de deelnemende media, fondsen en donaties. U kunt uw bijdrage storten op rekeningnummer <code>NL51 ABNA 0627 089 607</code>. Hartelijk dank voor uw overweging.</p>
+            <p><strong>Mail ons</strong></p>
+            <p>Voor vragen over klokkenluiden, deelname aan Publeaks en perverzoeken stuurt u een email naar <a href="mailto:info@publeaks.nl">info@publeaks.nl</a> (Key ID: <a href="https://sks-keyservers.net/pks/lookup?op=get&search=0x49CEAF74327CBECB" target="_blank"><code>0x49CE AF74 327C BECB</code></a>).</p>
+          </div>
+        </div>
+      </div>
     </div>
 
 

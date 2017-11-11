@@ -9,10 +9,7 @@
   opacity: 0.8;
 }
 
-#veiligheid .featured-list > li {
-  min-height: 129px;
-}
-
-#veiligheid .featured-list > li > img {
-  min-height: 120px;
+#jumbotron {
+  height: calc(100vh - 86px);
+  min-height: 456px;
 }
