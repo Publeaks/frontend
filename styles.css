@@ -5,8 +5,15 @@
   top: 0px;
   left: 0px;
   z-index: 1;
-  background: black;
-  opacity: 0.8;
+  background-color: black;
+}
+
+.opaque {
+  background-color: rgba(0,0,0,0.5);
+}
+
+.transparent {
+  background-color: rgba(0,0,0,0.0);
 }
 
 #jumbotron {

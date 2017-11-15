@@ -36,15 +36,21 @@
     <div class="block block-inverse text-center" id="jumbotron">
       <div class="block-foreground">
         <h1 class="block-title">Publeaks</h1>
-        <h4>Veilig en anoniem informatie delen met de pers</h4>
-        <button class="btn btn-outline-secondary mt-1">
+        <h2>Veilig en anoniem informatie delen met de pers</h2>
+        <button class="btn btn-outline-secondary btn-pill btn-lg mt-5 video-toggle" data-target="#video-welkom" data-attributes="rewind,volume">
           <span class="icon icon-controller-play"></span>
           Bekijk de video
         </button>
       </div>
-      <div class="block-background embed-responsive embed-responsive-16by9">
-        <div class="embed-responsive-overlay"></div>
-        <video class="embed-responsive-item" autoplay="true" muted="true" loop="true" controls="true">
+      <div id="video-welkom" class="block-background embed-responsive embed-responsive-16by9">
+        <div class="poster-controls embed-responsive-overlay opaque"></div>
+        <div class="fullscreen-controls invisible embed-responsive-overlay transparent d-flex justify-content-end align-items-start">
+          <button class="btn btn-outline-primary btn-pill btn-lg m-3 video-toggle">
+            <span class="icon icon-controller-paus"></span>
+            Sluiten
+          </button>
+        </div>
+        <video class="embed-responsive-item" loop>
     		  <source src="video/algemeen.mp4" type="video/mp4">
     		  <source src="video/algemeen.webm" type="video/webm">
     		  <source src="video/algemeen.ogv" type="video/ogg">
@@ -271,8 +277,7 @@
             <ul class="featured-list featured-list-bordered">
               <li class="pb-4">
                 <div class="featured-list-icon bg-primary text-white">
-                  <!-- span class="icon icon-shield"></span -->
-                  <span class="icon icon-check"></span>
+                  <span class="icon icon-shield"></span>
                 </div>
                 <div class="container">
                   <div class="row">
@@ -282,14 +287,25 @@
                         <small class="text-muted">Publeaks zorgt ervoor dat je communicatie altijd veilig verloopt.</small>
                       </h2>
                     </div>
-                    <div class="col embed-responsive embed-responsive-16by9 w-50">
-                      <video class="embed-responsive-item" autoplay="false" muted="true" loop="false" controls="false">
+                    <div id="video-veiligheid" class="col embed-responsive embed-responsive-16by9">
+                      <div class="poster-controls embed-responsive-overlay opaque d-flex justify-content-center align-items-center">
+                        <button class="btn btn-outline-secondary btn-pill text-white video-toggle" data-target="#video-veiligheid" data-attributes="pause,volume">
+                          <span class="icon icon-controller-play"></span>
+                          Play
+                        </button>
+                      </div>
+                      <div class="fullscreen-controls invisible embed-responsive-overlay transparent d-flex justify-content-end align-items-start">
+                        <button class="btn btn-outline-primary btn-pill btn-lg m-3 video-toggle">
+                          <span class="icon icon-controller-paus"></span>
+                          Sluiten
+                        </button>
+                      </div>
+                      <video class="embed-responsive-item">
                         <source src="video/veiligheid.mp4" type="video/mp4">
                         <source src="video/veiligheid.webm" type="video/webm">
                         <source src="video/veiligheid.ogv" type="video/ogg">
                         Your browser does not support the video tag.
                       </video>
-                    </div>
                   </div>
                 </div>
               </li>
@@ -305,8 +321,20 @@
                         <small class="text-muted">Het waarborgen van jouw privacy is van groot belang.</small>
                       </h2>
                     </div>
-                    <div class="col embed-responsive embed-responsive-16by9 w-50">
-                      <video class="embed-responsive-item" autoplay="false" muted="true" loop="false" controls="false">
+                    <div id="video-anoniem-contact" class="col embed-responsive embed-responsive-16by9">
+                      <div class="poster-controls embed-responsive-overlay opaque d-flex justify-content-center align-items-center">
+                        <button class="btn btn-outline-secondary btn-pill text-white video-toggle" data-target="#video-anoniem-contact" data-attributes="pause,volume">
+                          <span class="icon icon-controller-play"></span>
+                          Play
+                        </button>
+                      </div>
+                      <div class="fullscreen-controls invisible embed-responsive-overlay transparent d-flex justify-content-end align-items-start">
+                        <button class="btn btn-outline-primary btn-pill btn-lg m-3 video-toggle">
+                          <span class="icon icon-controller-paus"></span>
+                          Sluiten
+                        </button>
+                      </div>
+                      <video class="embed-responsive-item">
                         <source src="video/anoniem-contact.mp4" type="video/mp4">
                         <source src="video/anoniem-contact.webm" type="video/webm">
                         <source src="video/anoniem-contact.ogv" type="video/ogg">
@@ -327,8 +355,20 @@
                         <small class="text-muted">Zoek niet de publicitet maar blijf de stille held achter het nieuws.</small>
                       </h2>
                     </div>
-                    <div class="col embed-responsive embed-responsive-16by9 w-50">
-                      <video class="embed-responsive-item" muted="true">
+                    <div id="video-stille-held" class="col embed-responsive embed-responsive-16by9">
+                      <div class="poster-controls embed-responsive-overlay opaque d-flex justify-content-center align-items-center">
+                        <button class="btn btn-outline-secondary btn-pill text-white video-toggle" data-target="#video-stille-held" data-attributes="pause,volume">
+                          <span class="icon icon-controller-play"></span>
+                          Play
+                        </button>
+                      </div>
+                      <div class="fullscreen-controls invisible embed-responsive-overlay transparent d-flex justify-content-end align-items-start">
+                        <button class="btn btn-outline-primary btn-pill btn-lg m-3 video-toggle">
+                          <span class="icon icon-controller-paus"></span>
+                          Sluiten
+                        </button>
+                      </div>
+                      <video class="embed-responsive-item">
                         <source src="video/stille-held.mp4" type="video/mp4">
                         <source src="video/stille-held.webm" type="video/webm">
                         <source src="video/stille-held.ogv" type="video/ogg">
