@@ -161,7 +161,7 @@
     (function(){
       var video = $("#video-welkom video")[0];
       video.volume = 0.0;
-      video.play() = 0.0;
+      video.play();
     })();
 
     // Register smooth-scrolling events
