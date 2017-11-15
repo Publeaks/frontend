@@ -1,3 +1,8 @@
+#jumbotron {
+  height: calc(100vh - 86px);
+  min-height: 456px;
+}
+
 .embed-responsive-overlay {
   height: 100%;
   width: 100%;
@@ -16,7 +21,6 @@
   background-color: rgba(0,0,0,0.0);
 }
 
-#jumbotron {
-  height: calc(100vh - 86px);
-  min-height: 456px;
+.reset-line-height {
+  line-height: inherit;
 }

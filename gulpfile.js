@@ -18,7 +18,7 @@ var Paths = {
   HERE                 : './',
   DIST                 : 'dist',
   DIST_TOOLKIT_JS      : 'dist/toolkit.js',
-  SCSS_TOOLKIT_SOURCES : './scss/toolkit*',
+  SCSS_TOOLKIT_SOURCES : './scss/toolkit-minimal*',
   SCSS                 : './scss/**/**',
   JS                   : [
       "./js/bootstrap/util.js",
