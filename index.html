@@ -37,7 +37,7 @@
       <div class="block-foreground">
         <h1 class="block-title">Publeaks</h1>
         <h2>Veilig en anoniem informatie delen met de pers</h2>
-        <button class="btn btn-outline-light btn-pill btn-lg mt-5 video-toggle" data-target="#video-welkom" data-attributes="rewind,volume">
+        <button class="btn btn-outline-light btn-pill btn-lg mt-5 video-toggle" data-target="#video-welkom" data-attributes="rewind,loop,volume">
           <span class="icon icon-controller-play"></span>
           Bekijk de video
         </button>
@@ -50,7 +50,7 @@
             Sluiten
           </button>
         </div>
-        <video class="embed-responsive-item" loop>
+        <video class="embed-responsive-item">
     		  <source src="video/algemeen.mp4" type="video/mp4">
     		  <source src="video/algemeen.webm" type="video/webm">
     		  <source src="video/algemeen.ogv" type="video/ogg">
@@ -59,16 +59,13 @@
       </div>
     </div>
 
-    <nav id="navbar" class="navbar sticky-top justify-content-between navbar-light bg-light navbar-padded navbar-expand-sm">
-      <!-- Brand navbar-brang
-        <a class="navbar-brand" href="#">
-          <img style="margin-top: -20px; padding 0px 0px;" src="img/logo.png" height="66" alt="Publeaks">
+    <nav id="navbar" class="navbar sticky-top navbar-light bg-light navbar-padded navbar-expand-sm">
+      <div class="navbar-brand py-0">
+        <a class="smooth-scrolling" href="#top">
+          <img src="img/logo.png" class="img-fluid mh-100" alt="Publeaks">
         </a>
-      -->
-      <ul class="nav nav-bordered">
-        <li class="nav-item">
-          <a class="smooth-scrolling nav-link active" href="#top">Publeaks</a>
-        </li>
+      </div>
+      <ul class="nav nav-bordered mr-auto">
         <li class="nav-item">
           <a class="smooth-scrolling nav-link" href="#media">Media</a>
         </li>
@@ -100,14 +97,14 @@
     <div class="block">
       <div class="container-fluid">
         <div class="row">
+          <div class="col-1"></div>
           <div class="col-9">
             <h2 class="block-title reset-line-height">
-              <strong class="text-ribbon text-ribbon-primary text-white">
-                <span>Publeaks streeft naar een transparante samenleving door het controlerend vermogen van de pers te versterken. Alleen samen spreken we de overheid en het bedrijfsleven aan op hun verantwoordelijkheid.</span>
-              </strong>
-            </h2>
-            <h3 class="text-muted reset-line-height">Publeaks maakt gebruikt van de <a href="https://globaleaks.org" alt="GlobaLeaks" target="_blank">GlobaLeaks software</a> om op een veilige manier data te verzenden en te versleutelen.</h3>
+              <strong class="text-primary">Publeaks streeft naar een transparante samenleving door het controlerend vermogen van de pers te versterken. Alleen samen spreken we de overheid en het bedrijfsleven aan op hun verantwoordelijkheid.</strong>
+              <small>Publeaks maakt gebruikt van de <a href="https://globaleaks.org" alt="GlobaLeaks" target="_blank">GlobaLeaks software</a> om op een veilige manier data te verzenden en te versleutelen.</small>
+            </h3>
           </div>
+          <div class="col"></div>
         </div>
       </div>
     </div>
@@ -230,8 +227,12 @@
             <div class="card">
               <img class="card-img-top" src="img/iets-belangrijks-vertellen.jpg" alt="Iets belangrijks vertellen">
               <div class="card-body">
-                <p class="card-title h1">Iets belangrijks vertellen</p>
-                <p class="card-text lead">Een gezonde democratie kan niet zonder transparantie en dat kan niet zonder jou.</p>
+                <h2 class="card-title">
+                  Iets belangrijks vertellen
+                </h2>
+                <p class="card-text h2">
+                  <small class="text-muted">Een eerlijke samenleving kan niet zonder transparantie en dat kan niet zonder klokkenluiders.</small>
+                </p>
               </div>
             </div>
           </div>
@@ -239,8 +240,12 @@
             <div class="card">
               <img class="card-img-top" src="img/stille-held-achter-het-nieuws.jpg" alt="Stille held achter het nieuws">
               <div class="card-body">
-                <p class="card-title h1">Stille held achter het nieuws</p>
-                <p class="card-text lead">Wat men niet weet, kan men niet veranderen. Door aan de bel te trekken kan dat wel.</p>
+                <h2 class="card-title">
+                  Stille held achter het nieuws
+                </h2>
+                <p class="card-text h2">
+                  <small class="text-muted">De pers onderzoekt jouw tips en verspreidt de resultaten onder een breed publiek.</small>
+                </p>
               </div>
             </div>
           </div>
@@ -248,8 +253,12 @@
             <div class="card">
               <img class="card-img-top" src="img/niet-alleen-staan.jpg" alt="Niet alleen staan">
               <div class="card-body">
-                <p class="card-title h1">Niet alleen staan</p>
-                <p class="card-text lead">Alleen samen kunnen we misstanden aan de kaak stellen, actie ondernemen en iets veranderen.</p>
+                <h2 class="card-title">
+                  Niet alleen staan
+                </h2>
+                <p class="card-text h2">
+                  <small class="text-muted">Samen kunnen we misstanden aan de kaak stellen, actie ondernemen en dingen veranderen.</small>
+                </p>
               </div>
             </div>
           </div>
@@ -267,16 +276,14 @@
         <div class="row justify-content-between align-items-center mt-5">
           <div class="col-4">
             <h3 class="reset-line-height">
-              <strong class="text-ribbon text-ribbon-primary text-white">
-                <span>Leer in drie simpele stappen hoe je ongezien van Publeaks gebruik kan maken.</span>
-              </strong>
+              <strong class="text-primary">Leer in drie simpele stappen hoe je ongezien van Publeaks gebruik kan maken.</strong>
+              <small>Bekijk de videos om  meer de weten te komen over privacy en anonimiteit online.</small>
             </h3>
-            <p class="lead text-muted">Bekijk de videos om  meer de weten te komen over privacy en anonimiteit online.</p>
           </div>
           <div class="col-7">
             <ul class="featured-list featured-list-bordered">
               <li class="mb-4">
-                <div class="featured-list-icon bg-primary text-white">
+                <div id="mark-veiligheid" class="featured-list-icon">
                   <span class="icon icon-shield"></span>
                 </div>
                 <div class="container">
@@ -300,7 +307,7 @@
                           Sluiten
                         </button>
                       </div>
-                      <video class="embed-responsive-item">
+                      <video class="embed-responsive-item" data-target="#mark-veiligheid">
                         <source src="video/veiligheid.mp4" type="video/mp4">
                         <source src="video/veiligheid.webm" type="video/webm">
                         <source src="video/veiligheid.ogv" type="video/ogg">
@@ -310,7 +317,7 @@
                 </div>
               </li>
               <li class="mb-4">
-                <div class="featured-list-icon">
+                <div id="mark-anoniem-contact" class="featured-list-icon">
                   <span class="icon icon-fingerprint"></span>
                 </div>
                 <div class="container">
@@ -334,7 +341,7 @@
                           Sluiten
                         </button>
                       </div>
-                      <video class="embed-responsive-item">
+                      <video class="embed-responsive-item" data-target="#mark-anoniem-contact">
                         <source src="video/anoniem-contact.mp4" type="video/mp4">
                         <source src="video/anoniem-contact.webm" type="video/webm">
                         <source src="video/anoniem-contact.ogv" type="video/ogg">
@@ -345,13 +352,14 @@
                 </div>
               </li>
               <li>
-                <div class="featured-list-icon">
+                <div id="mark-stille-held" class="featured-list-icon">
                   <span class="icon icon-users"></span>
                 </div>
                 <div class="container">
                   <div class="row">
                     <div class="col">
-                      <h2>Stille held.
+                      <h2>
+                        Stille held.
                         <small class="text-muted">Zoek niet de publicitet maar blijf de stille held achter het nieuws.</small>
                       </h2>
                     </div>
@@ -368,7 +376,7 @@
                           Sluiten
                         </button>
                       </div>
-                      <video class="embed-responsive-item">
+                      <video class="embed-responsive-item" data-target="#mark-stille-held">
                         <source src="video/stille-held.mp4" type="video/mp4">
                         <source src="video/stille-held.webm" type="video/webm">
                         <source src="video/stille-held.ogv" type="video/ogg">

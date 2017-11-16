@@ -139,6 +139,7 @@
               else if (attr === "pause") video.play()
               else if (attr === "rewind") video.currentTime = 0.0;
               else if (attr === "volume") video.volume = 1.0;
+              else if (attr === "loop") video.loop = false;
             });
           } else {
             fscreen.removeEventListener('fullscreenchange', handler, false);
@@ -146,7 +147,11 @@
             posterControls.removeClass("invisible");
             attrs.forEach(function(attr) {
               if (false) { }
-              else if (attr === "pause") video.pause()
+              else if (attr === "pause") video.pause();
+              else if (attr === "loop") {
+                video.loop = true;
+                video.play();
+              }
               else if (attr === "volume") video.volume = 0.0;
             });
           };
@@ -157,10 +162,20 @@
       }
     });
 
+    // Register video ended events
+    $("video").on("ended", function(evt){
+      fscreen.exitFullscreen();
+      var target = $(evt.delegateTarget).attr("data-target");
+      if (target !== undefined) {
+        $(target).addClass("bg-primary text-white");
+      }
+    });
+
     // Start the background video with volume down
     (function(){
       var video = $("#video-welkom video")[0];
       video.volume = 0.0;
+      video.loop = true;
       video.play();
     })();
 

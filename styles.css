@@ -21,6 +21,13 @@
   background-color: rgba(0,0,0,0.0);
 }
 
+.navbar-brand {
+  height: 86px;
+  margin-top: -20px;
+  margin-bottom: -20px;
+  margin-left: -14px;
+}
+
 .reset-line-height {
   line-height: inherit;
 }
