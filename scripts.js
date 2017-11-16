@@ -124,7 +124,8 @@
       if (fscreen.fullscreenElement !== null) {
         fscreen.exitFullscreen();
       } else {
-        var target = $($(evt.delegateTarget).attr("data-target"));
+        var target = $($(evt.delegateTarget).attr("data-target"))
+          .find("div.embed-responsive");
         var attrs = $(evt.delegateTarget).attr("data-attributes").split(",");
         var video = target.find("video")[0]
           , posterControls  = target.find(".poster-controls")
@@ -167,7 +168,10 @@
       fscreen.exitFullscreen();
       var target = $(evt.delegateTarget).attr("data-target");
       if (target !== undefined) {
-        $(target).addClass("bg-primary text-white");
+        $(target).find("div.poster-controls button.video-toggle")
+          .removeClass("animated infinite pulse");
+        $(target).find("div.featured-list-icon")
+          .addClass("bg-primary text-white animated infinite pulse");
       }
     });
 
