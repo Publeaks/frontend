@@ -67,10 +67,10 @@
   })();
 
   // Check Tor status
-  let secureserver = "https://secure.publeaks.nl"
+  let secureserver = "https://secure.publeaks.nl/#/submission?context=072f5959-03f7-4e59-84db-3c6a1c4b2542"
     , securereceipt = "https://secure.publeaks.nl/#/receipt"
     , checktor = "https://secure.publeaks.nl/checktor"
-    , hiddenserver = "http://5karyquenden4d6k.onion"
+    , hiddenserver = "http://5karyquenden4d6k.onion/#/submission?context=072f5959-03f7-4e59-84db-3c6a1c4b2542"
     , hiddenreceipt = "http://5karyquenden4d6k.onion/#/receipt";
   var tor = false;
 
