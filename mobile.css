@@ -1,0 +1,9 @@
+.app > div.buttons, .app > div.controls {
+  max-width: 520px; }
+
+.app > div.history {
+  height: calc(100vh - 40px);
+  overflow-y: scroll;
+  max-width: 540px; }
+.app > div.history > div.alert {
+  max-width: 80%; }

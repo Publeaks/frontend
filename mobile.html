@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Publeaks mobile HTML5 kitchen sink</title>
+    <link href="dist/toolkit-minimal.min.css" rel="stylesheet">
+    <link href="mobile.css" rel="stylesheet">
+  </head>
+  <body>
+
+  <div id="security-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            <span class="icon icon-warning"></span>
+            Security warning
+          </h5>
+        </div>
+        <div class="modal-body">
+          <p>You don't appear to visit this site using the Tor browser. <a href="https://www.torproject.org/download/download-easy.html.en"><span class="icon icon-download"></span> Download and install the Tor Browser</a> to guarantee your anonimity.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal"><span class="icon icon-warning"> Proceed</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="col-auto m-auto">
+        <div class="app">
+          <!-- BUTTONS -->
+          <div class="fixed-top m-auto text-center px-1 pt-1 buttons">
+            <button class="btn btn-primary btn-pill text-white">
+              <span class="icon icon-forward"></span>
+              Move on
+            </button>
+          </div>
+          <!-- CONTROLS -->
+          <div class="fixed-bottom m-auto px-1 pb-1 controls">
+            <div class="input-group">
+              <div class="input-group-btn dropup">
+                <button class="btn btn-outline-secondary text-dark dropdown-toggle" data-toggle="dropdown">
+                  <span class="icon icon-menu"></span>
+                </button>
+                <div class="dropdown-menu">
+                  <h6 class="dropdown-header">Publeaks mobile</h6>
+                  <a class="dropdown-item" href="#">
+                    <span class="icon icon-info"></span>
+                    About Stichting Publeaks
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <span class="icon icon-shield"></span>
+                    Security information
+                  </a>
+                  <div class="dropdown-divider"></div>
+                  <h6 class="dropdown-header">Your submission</h6>
+                  <a class="dropdown-item" href="#">
+                    <span class="icon icon-new-message"></span>
+                    New tip-off
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <span class="icon icon-fingerprint"></span>
+                    Continue conversation
+                  </a>
+                  <a class="dropdown-item text-danger" href="#">
+                    <span class="icon icon-trash"></span>
+                    Destroy all data
+                  </a>
+                </div>
+              </div>
+              <input class="form-control" type="text" placeholder="&hellip;"></input>
+              <div class="input-group-btn">
+                <button class="btn btn-secondary">
+                  <span class="icon icon-camera"></span>
+                </button>
+                <button class="btn btn-primary text-white">
+                  <span class="icon icon-paper-plane"></span>
+                  Send
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- HISTORY -->
+          <div class="history d-flex flex-column pt-1">
+            <div class="align-self-center"><span class="text-muted">Welcome to Publeaks mobile.</span></div>
+            <div class="align-self-center"><span class="text-muted">Publeaks chatbot joined the chat.</span></div>
+            <div class="alert alert-primary align-self-start">Hello and welcome to Publeaks mobile!</div>
+            <div class="alert alert-primary align-self-start">If you'd like to continue a conversation, please enter your identification word now. Click <a href="#">New tip-off</a> to share a story with the press.</div>
+            <div class="alert align-self-center">
+              <div class="card border">
+                <div class="card-body">
+                  <h5 class="card-title">Welcome</h5>
+                  <p class="card-text">Please enter your identification or panic word now, or choose from the options below.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#">Publeaks introduction</a></li>
+                  <li class="list-group-item"><a href="#">Security information</a></li>
+                  <li class="list-group-item"><a href="#">New tip-off</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="alert alert-secondary align-self-end">Introduction</div>
+            <div class="alert alert-primary align-self-start">Publeaks allows you to safely and anonymously share information with the media.</div>
+            <div class="alert alert-primary align-self-start">Here's an introductory video that tells you some more about Publeaks and Publeaks mobile.</div>
+            <div class="alert alert-primary align-self-start">
+              <video class="img-fluid" controls>
+                <source src="video/algemeen.mp4" type="video/mp4">
+                <source src="video/algemeen.webm" type="video/webm">
+                <source src="video/algemeen.ogv" type="video/ogg">
+                Your browser does not support the video tag.
+              </video>
+            </div>
+            <div class="alert alert-secondary align-self-end">New tip-off</div>
+            <div class="alert alert-primary align-self-start">Very well, let's go!</div>
+            <div class="alert alert-primary align-self-start">Journalists often want to get in touch with you for follow-up questions. Off course, Publeaks never shares your personal information with anyone, not even the journalist.</div>
+            <div class="alert alert-primary align-self-start">I can forward questions from journalists to you when you come back to my website on this phone. To be able to do that, I need to put a small file ('cookie') on your phone that allows me to recognise you when you come back here.</div>
+            <div class="alert align-self-center">
+              <div class="card border">
+                <div class="card-body">
+                  <h5 class="card-title">Cookie</h5>
+                  <p class="card-text">Can I put a cookie on your phone?</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#">Yes, go ahead</a></li>
+                  <li class="list-group-item"><a href="#">No, please don't</a></li>
+                  <li class="list-group-item"><a href="#">What about my privacy?</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="alert alert-secondary align-self-end">Yes, go ahead</div>
+            <div class="alert alert-primary align-self-start">Excellent, I've put a cookie on your phone. It will expire automatically after one week unless you come back to my website.</div>
+            <div class="alert alert-primary align-self-start">If I ask you to identify yourself, use the work <strong>dog</strong>. That's your <a href="#">identification word</a>.</div>
+            <div class="alert alert-primary align-self-start">When there's reason for panic, use the word <strong>cat</strong> instead. When you use your <a href="#">panic word</a> for identification, I will delete the cookie and destroy all references to you and to our converdation.</div>
+            <div class="alert alert-primary align-self-start">Now onto your tip-off!</div>
+            <div class="alert alert-primary align-self-start">If at any time you want to take a photo, or share an image or file, just go ahead and use the camera button at the bottom!</div>
+            <div class="alert alert-primary align-self-start">What kind of information or documents are you submitting?</div>
+            <div class="alert align-self-center">
+              <div class="card border">
+                <div class="card-body">
+                  <h5 class="card-title">Document type</h5>
+                  <p class="card-text">Please describe your documents or choose from the following options.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#">Confidential documents</a></li>
+                  <li class="list-group-item"><a href="#">Public documents</a></li>
+                  <li class="list-group-item"><a href="#">Website or link</a></li>
+                  <li class="list-group-item"><a href="#">Press release</a></li>
+                  <li class="list-group-item"><a href="#">Other information</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="alert alert-secondary align-self-end">Confidential documents</div>
+            <div class="alert alert-primary align-self-start">Thank you. Please continue to describe your documents or click <a href="#">Move on</a>.</div>
+            <div class="alert alert-secondary align-self-end">I'm sending you the expense forms of our interim director. He's taking home an outrageous amount of money!</div>
+            <div class="alert alert-secondary align-self-end">Move on</div>
+            <div class="alert alert-primary align-self-start">What risk do you run by sharing this information?</div>
+            <div class="alert align-self-center">
+              <div class="card border">
+                <div class="card-body">
+                  <h5 class="card-title">What risk do you run?</h5>
+                  <p class="card-text">Please describe your situation or choose from the following options.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#">Social exclusion</a></li>
+                  <li class="list-group-item"><a href="#">Legal proceesings</a></li>
+                  <li class="list-group-item"><a href="#">Physical violence</a></li>
+                  <li class="list-group-item"><a href="#">Little or no risk</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="alert alert-secondary align-self-end">Legal proceesings</div>
+            <div class="alert alert-primary align-self-start">Thanks, you can continue to describe your situation or click <a href="#">Move on</a>.</div>
+            <div class="alert alert-secondary align-self-end">Move on</div>
+            <div class="alert alert-primary align-self-start">Which company, organization or individual are you sharing information about?</div>
+            <div class="alert alert-secondary align-self-end">The interim director at Humanitas</div>
+            <div class="alert alert-primary align-self-start">You're sharing information about <strong>the interim director at Humanitas</strong>. Try again or click <a href="#">Move on</a> if this is correct.</div>
+            <div class="alert alert-secondary align-self-end">Move on</div>
+            <div class="alert alert-primary align-self-start">Do you have a formal (business) relationship with the interim director at Humanitas?</div>
+            <div class="alert align-self-center">
+              <div class="card border">
+                <div class="card-body">
+                  <h5 class="card-title">Do you have a relation to the story?</h5>
+                  <p class="card-text">Please describe how you're involved in this story or choose from the following options.</p>
+                </div>
+                <ul class="list-group list-group-flush">
+                  <li class="list-group-item"><a href="#">Yes, I do</a></li>
+                  <li class="list-group-item"><a href="#">No, I don't</a></li>
+                  <li class="list-group-item"><a href="#">Not anymore</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="alert alert-secondary align-self-end">Yes, I do</div>
+            <div class="alert alert-primary align-self-start">Got that. You can continue to describe your relationship to the story, but please know that this information can be used to quickly identify you. Perhaps it's better to just <a href="#">Move on</a>.</div>
+            <div class="alert alert-secondary align-self-end">Move on</div>
+            <div class="alert alert-primary align-self-start">Please describe the story in your own words. Don't include any personal information unless you're comfortable with a journalist knowing about your identity! Click <a href="#">Move on</a> when you're done.
+            </div>
+            <div class="alert alert-secondary align-self-end">Humanitas has an interim director. Between himself and his secretary they take home over Euro 100.000 monthly in expenses.</div>
+            <div class="alert alert-secondary align-self-end">That's an enormous amount of money, especially for a registered chartiy like Humanitas.</div>
+            <div class="alert alert-secondary align-self-end">The previous director took home about Euro 7.000 in monthly salaries and expensed perhaps Euro 1.000 on occasion. Nowhere near the amount the interim director is taking home.</div>
+            <div class="alert alert-secondary align-self-end">It's outrageous and this story should be told for the good of the people that donate money to Humanitas every month or every year!</div>
+            <div class="alert alert-secondary align-self-end">Move on</div>
+            <div class="alert alert-primary align-self-start">We're almost done. Please send me any attachments (photos, images, audio or video clips that you'd like to include with your tip-off.</div>
+            <div class="alert alert-primary align-self-start">Click <a href="#">Move on</a> when you're done.</div>
+            <div class="alert alert-secondary align-self-end">
+              <img class="img-fluid" src="img/niet-alleen-staan.jpg">
+            </div>
+            <div class="alert alert-secondary align-self-end">This picture shows his expense form from last month.</div>
+            <div class="alert alert-secondary align-self-end">
+              <img class="img-fluid" src="img/iets-belangrijks-vertellen.jpg">
+            </div>
+            <div class="alert alert-secondary align-self-end">Here are all his expense declarations in the past year.</div>
+            <div class="alert alert-secondary align-self-end">Move on</div>
+            <div class="alert alert-primary align-self-start">Thank you. I've informed to newsrooms of participating media of your story.</div>
+            <div class="alert alert-primary align-self-start">You can continue to leave additional information in this chat and I will make sure the journalists receive your messages.</div>
+            <div class="alert alert-primary align-self-start">My job is done but please come back from time to time. If a newsroom wants to run your story, then their journalist may want to ask you additional questions.</div>
+            <div class="alert alert-primary align-self-start">I'll ping you here when a journalists wants to get in touch.</div>
+            <div class="alert alert-secondary align-self-end">Thanks</div>
+            <div class="align-self-center"><span class="text-muted">De Volkskrant joined the chat.</span></div>
+            <div class="alert align-self-center business-card">
+              <div class="card border">
+                <img class="card-img-top" src="img/portrait.jpg">
+                <div class="card-body">
+                  <h5 class="card-title">Marlies Brouwer</h5>
+                  <h6 class="card-subtitle mb-2 text-muted">de Volkskrant</h6>
+                </div>
+              </div>
+            </div>
+            <div class="alert alert-warning align-self-start">Hi, my name is Marlies Brouwer, journalist at the investigative reports desk of the Volkskrant. I think there's a great story here that really needs to be told. Can I ask you some follow up questions?
+              <hr>
+              <cite><span class=""><small>Marlies Brouwer, de Volkskrant</small></span></cite>
+            </div>
+            <div class="alert alert-secondary align-self-end">How can I help you?</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="vendor/jquery-2.2.4.min.js"></script>
+  <script src="vendor/popper.min.js"></script>
+  <script src="dist/toolkit.min.js"></script>
+  <script src="mobile.js"></script>
+</body>
+</html>
