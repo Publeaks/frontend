@@ -1,16 +1,15 @@
-body {
-  background: url("img/pattern.png") repeat; }
+.app {
+  background: url("img/pattern.png") repeat;
+  height: 100vh;
+  max-width: calc(100vw);
+  width: 540px}
 
 .app > div.buttons, .app > div.controls {
   max-width: calc(100vw - 20px);
-  width: 540px; }
-.app > div.controls > div.input-group {
-  background-color: white; }
+  width: 520px; }
 
 .app > div.history {
-  height: calc(100vh - 40px);
-  overflow-y: scroll;
-  max-width: calc(100vw - 20px);
-  width: 540px}
+  height: calc(100% - 40px);
+  overflow-y: scroll; }
 .app > div.history > div.alert {
   max-width: 80%; }
