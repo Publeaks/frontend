@@ -7,9 +7,12 @@
 .app > div.buttons, .app > div.controls {
   max-width: calc(100vw - 20px);
   width: 520px; }
+/** Optionsal controls */
+.app >div.buttons, .app > div.controls > div.scroll {
+  display: none; }
 
 .app > div.history {
-  height: calc(100% - 40px);
+  height: calc(100% - 50px);
   overflow-y: scroll; }
 .app > div.history > div.alert {
   max-width: 80%; }

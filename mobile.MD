@@ -10,3 +10,11 @@ I need at least the following shortcodes to communicate between Rivescript and m
 - __^card()__ Send a card to the chat history
 - __^image()__ Send an image to the chat history
 - __^video()__ Send a video to the chat history
+
+## To-do
+
+- div.history scroll behaviour
+- bleep/sound upon new messages
+- scroll to bottom buttons
+
+I may decide to use regular (browser default) scroll behaviour rather than manually set the scroll behaviour of the div.history. This will be less maintenance, but it will also be less 'app-like'.
