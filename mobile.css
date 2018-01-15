@@ -17,10 +17,11 @@
   */
 .app > div.history {
   min-height: 100vh;
-  padding-bottom: 50px;
-}
+  padding-bottom: 50px; }
+.app > div.history div.alert {
+  max-width: 80%; }
+.app > div.history > div.notification {
+  margin-bottom: 7px;}
 .app > div.history > div.with-reply {
   width: 100%;
 }
-.app > div.history div.alert {
-  max-width: 80%; }
