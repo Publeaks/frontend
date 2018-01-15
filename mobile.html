@@ -49,10 +49,13 @@
               </button>
             </div>
             <!-- TEXT INPUT AND MENUS -->
-            <div class="input-group input">
+            <div class="input-group input text-danger">
               <div class="input-group-btn dropup">
-                <button class="btn btn-outline-secondary text-dark dropdown-toggle" data-toggle="dropdown">
-                  <span class="icon icon-menu"></span>
+                <button class="btn btn-outline-secondary bg-light text-dark dropdown-toggle" data-toggle="dropdown">
+                  <!-- REGULAR USER CASE (SEND TO ALL)
+                    <span class="icon icon-menu"></span>
+                  -->
+                  <span class="icon icon-man text-danger"></span>
                 </button>
                 <div class="dropdown-menu">
                   <h6 class="dropdown-header">Publeaks mobile</h6>
@@ -78,9 +81,22 @@
                     <span class="icon icon-trash"></span>
                     Destroy all data
                   </a>
+                  <h6 class="dropdown-header">Participants</h6>
+                  <a class="dropdown-item disabled" href="#">
+                    <span class="icon icon-man"></span>
+                    Direct message to Marlies Brouwer
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <span class="icon icon-users"></span>
+                    Send direct message to&hellip;
+                  </a>
+                  <a class="dropdown-item" href="#">
+                    <span class="icon icon-menu"></span>
+                    Send to all
+                  </a>
                 </div>
               </div>
-              <input class="form-control" type="text" placeholder="&hellip;"></input>
+              <input class="form-control" type="text" placeholder="Direct message&hellip;"></input>
               <div class="input-group-btn">
                 <button class="btn btn-secondary">
                   <span class="icon icon-camera"></span>
@@ -94,8 +110,18 @@
           </div>
           <!-- HISTORY -->
           <div class="history d-flex flex-column">
-            <div class="align-self-center"><span class="text-muted">Welcome to Publeaks mobile.</span></div>
-            <div class="align-self-center"><span class="text-muted">Publeaks chatbot joined the chat.</span></div>
+            <div class="align-self-center">
+              <span class="text-muted">
+                <span class="icon icon-bell"></span>
+                Welcome to Publeaks mobile.
+              </span>
+            </div>
+            <div class="align-self-center">
+              <span class="text-muted">
+                <span class="icon icon-user"></span>
+                Publeaks chatbot joined the chat.
+              </span>
+            </div>
             <div class="alert alert-primary align-self-start">Hello and welcome to Publeaks mobile!</div>
             <div class="alert alert-primary align-self-start">If you'd like to continue a conversation, please enter your identification word now. Click <a href="#">New tip-off</a> to share a story with the press.</div>
             <div class="alert align-self-center">
@@ -227,7 +253,12 @@
             <div class="alert alert-primary align-self-start">My job is done but please come back from time to time. If a newsroom wants to run your story, then their journalist may want to ask you additional questions.</div>
             <div class="alert alert-primary align-self-start">I'll ping you here when a journalists wants to get in touch.</div>
             <div class="alert alert-info align-self-end">Thanks</div>
-            <div class="align-self-center"><span class="text-muted">De Volkskrant joined the chat.</span></div>
+            <div class="align-self-center">
+              <span class="text-muted">
+                <span class="icon icon-user"></span>
+                De Volkskrant joined the chat.
+              </span>
+            </div>
             <div class="alert align-self-center business-card">
               <div class="card border">
                 <img class="card-img-top" src="img/portrait.jpg">
@@ -237,11 +268,29 @@
                 </div>
               </div>
             </div>
-            <div class="alert alert-warning align-self-start">Hi, my name is Marlies Brouwer, journalist at the investigative reports desk of the Volkskrant. I think there's a great story here that really needs to be told. Can I ask you some follow up questions?
+            <div class="alert alert-warning align-self-start">
+              Hi, my name is Marlies Brouwer, journalist at the investigative reports desk of the Volkskrant. I think there's a great story here that really needs to be told. Can I ask you some follow up questions?
               <hr>
-              <cite><span class=""><small>Marlies Brouwer, de Volkskrant</small></span></cite>
+              <cite><span class=""><small>
+                <span class="icon icon-user"></span>
+                From Marlies Brouwer, de Volkskrant
+              </small></span></cite>
             </div>
-            <div class="alert alert-info align-self-end">How can I help you?</div>
+            <div class="alert alert-info align-self-end">
+              How can I help you?
+              <hr>
+              <cite><span class=""><small>
+                <span class="icon icon-man"></span>
+                Direct message to Marlies Brouwer, de Volkskrant
+              </small></span></cite>
+            </div>
+            <!-- PRIVATE MESSAGE NOTIFICATION INJECTED INTO HISTORY -->
+            <div class="align-self-center">
+              <span class="text-danger">
+                <span class="icon icon-man"></span>
+                Send a direct message to Marlies Brouwer.
+              </span>
+            </div>
           </div>
         </div>
       </div>
