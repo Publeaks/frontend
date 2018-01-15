@@ -1,18 +1,26 @@
 .app {
   background: url("img/pattern.png") repeat;
-  height: 100vh;
   max-width: calc(100vw);
   width: 540px}
 
 .app > div.buttons, .app > div.controls {
   max-width: calc(100vw - 20px);
   width: 520px; }
-/** Optionsal controls */
+/** Optional controls
 .app >div.buttons, .app > div.controls > div.scroll {
   display: none; }
-
+  */
+/** Use default scroll behaviour instead
 .app > div.history {
   height: calc(100% - 50px);
   overflow-y: scroll; }
-.app > div.history > div.alert {
+  */
+.app > div.history {
+  min-height: 100vh;
+  padding-bottom: 50px;
+}
+.app > div.history > div.with-reply {
+  width: 100%;
+}
+.app > div.history div.alert {
   max-width: 80%; }
