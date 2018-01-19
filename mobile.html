@@ -30,6 +30,41 @@
     </div>
   </div>
 
+  <div id="reply-modal" class="modal fade" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">
+            <span class="icon icon-reply"></span>
+            Write a reply
+          </h5>
+        </div>
+        <div class="modal-body">
+          <div class="alert alert-warning">
+            <blockquote class="blockquote">
+              Hi, my name is Marlies Brouwer, journalist at the investigative reports desk of the Volkskrant. I think there's a great story here that really needs to be told. Can I ask you some follow up questions?
+              <hr>
+              <cite>
+                <small>
+                  <span class="icon icon-user"></span>
+                  From Marlies Brouwer, de Volkskrant
+                </small>
+              </cite>
+            </blockquote>
+          </div>
+          <div class="form-group">
+            <label for="exampleInputPassword1">Your reply:</label>
+            <input id="replyInput" class="form-control" type="text" placeholder="&hellip;"></input>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal"><span class="icon icon-cross"> Cancel</button>
+          <button type="button" class="btn btn-primary text-white"><span class="icon icon-reply"> Reply</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <div class="container">
     <div class="row">
       <div class="col-auto m-auto px-0">
@@ -53,10 +88,7 @@
             <div class="input-group input text-danger">
               <div class="input-group-btn dropup">
                 <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                  <!-- REGULAR USER CASE (SEND TO ALL)
-                    <span class="icon icon-menu"></span>
-                  -->
-                  <span class="icon icon-man text-danger"></span>
+                  <span class="icon icon-menu"></span>
                 </button>
                 <div class="dropdown-menu">
                   <h6 class="dropdown-header">Publeaks mobile</h6>
@@ -84,20 +116,20 @@
                   </a>
                   <h6 class="dropdown-header">Participants</h6>
                   <a class="dropdown-item disabled" href="#">
-                    <span class="icon icon-man"></span>
-                    Direct message to Marlies Brouwer
+                    <span class="icon icon-user"></span>
+                    Replying to Marlies Brouwer
                   </a>
                   <a class="dropdown-item" href="#">
-                    <span class="icon icon-users"></span>
-                    Send direct message to&hellip;
+                    <span class="icon icon-reply"></span>
+                    Reply to&hellip;
                   </a>
                   <a class="dropdown-item" href="#">
-                    <span class="icon icon-menu"></span>
-                    Send to all
+                    <span class="icon icon-reply-all"></span>
+                    Reply to all
                   </a>
                 </div>
               </div>
-              <input class="form-control" type="text" placeholder="Direct message&hellip;"></input>
+              <input class="form-control" type="text" placeholder="&hellip;"></input>
               <div class="input-group-btn">
                 <button class="btn btn-secondary">
                   <span class="icon icon-camera"></span>
@@ -287,16 +319,16 @@
               <hr>
               <cite>
                 <small>
-                  <span class="icon icon-man"></span>
-                  Direct message to Marlies Brouwer, de Volkskrant
+                  <span class="icon icon-reply"></span>
+                  In reply to Marlies Brouwer, de Volkskrant
                 </small>
               </cite>
             </div>
             <!-- PRIVATE MESSAGE NOTIFICATION INJECTED INTO HISTORY -->
             <div class="notification align-self-center animated infinite pulse">
               <small class="text-danger">
-                <span class="icon icon-man"></span>
-                Send a direct message to Marlies Brouwer.
+                <span class="icon icon-reply"></span>
+                Replying to Marlies Brouwer.
               </small>
             </div>
           </div>
