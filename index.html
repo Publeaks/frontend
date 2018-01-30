@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Publeaks Theme</title>
     <link href="dist/toolkit-minimal.min.css" rel="stylesheet">
+    <link href="vendor/animate.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
   </head>
   <body id="top" data-spy="scroll" data-target="#navbar" data-offset="86">
@@ -37,7 +38,7 @@
       <div class="block-foreground">
         <h1 class="block-title">Publeaks</h1>
         <h2>Veilig en anoniem informatie delen met de pers</h2>
-        <button class="btn btn-outline-light btn-pill btn-lg mt-5 video-toggle" data-target="#video-welkom" data-attributes="rewind,loop,volume">
+        <button class="btn btn-outline-light btn-pill btn-lg mt-5 video-toggle animated infinite pulse" data-target="#video-welkom" data-attributes="rewind,loop,volume">
           <span class="icon icon-controller-play"></span>
           Bekijk de video
         </button>
@@ -287,8 +288,8 @@
           </div>
           <div class="col-7">
             <ul class="featured-list featured-list-bordered">
-              <li class="mb-4">
-                <div id="mark-veiligheid" class="featured-list-icon">
+              <li id="video-veiligheid" class="mb-4">
+                <div class="featured-list-icon">
                   <span class="icon icon-shield"></span>
                 </div>
                 <div class="container">
@@ -299,9 +300,9 @@
                         <small class="text-muted">Publeaks zorgt ervoor dat je communicatie altijd veilig verloopt.</small>
                       </h2>
                     </div>
-                    <div id="video-veiligheid" class="col embed-responsive embed-responsive-16by9">
+                    <div class="col embed-responsive embed-responsive-16by9">
                       <div class="poster-controls embed-responsive-overlay opaque d-flex justify-content-center align-items-center">
-                        <button class="btn btn-outline-light btn-pill text-white video-toggle" data-target="#video-veiligheid" data-attributes="pause,volume">
+                        <button class="btn btn-outline-light btn-pill text-white video-toggle animated infinite pulse" data-target="#video-veiligheid" data-attributes="pause,volume">
                           <span class="icon icon-controller-play"></span>
                           Play
                         </button>
@@ -312,7 +313,7 @@
                           Sluiten
                         </button>
                       </div>
-                      <video class="embed-responsive-item" data-target="#mark-veiligheid">
+                      <video class="embed-responsive-item" data-target="#video-veiligheid">
                         <source src="video/veiligheid.mp4" type="video/mp4">
                         <source src="video/veiligheid.webm" type="video/webm">
                         <source src="video/veiligheid.ogv" type="video/ogg">
@@ -321,8 +322,8 @@
                   </div>
                 </div>
               </li>
-              <li class="mb-4">
-                <div id="mark-anoniem-contact" class="featured-list-icon">
+              <li id="video-anoniem-contact" class="mb-4">
+                <div class="featured-list-icon">
                   <span class="icon icon-fingerprint"></span>
                 </div>
                 <div class="container">
@@ -333,9 +334,9 @@
                         <small class="text-muted">Het waarborgen van jouw privacy is van groot belang.</small>
                       </h2>
                     </div>
-                    <div id="video-anoniem-contact" class="col embed-responsive embed-responsive-16by9">
+                    <div class="col embed-responsive embed-responsive-16by9">
                       <div class="poster-controls embed-responsive-overlay opaque d-flex justify-content-center align-items-center">
-                        <button class="btn btn-outline-light btn-pill text-white video-toggle" data-target="#video-anoniem-contact" data-attributes="pause,volume">
+                        <button class="btn btn-outline-light btn-pill text-white video-toggle animated infinite pulse" data-target="#video-anoniem-contact" data-attributes="pause,volume">
                           <span class="icon icon-controller-play"></span>
                           Play
                         </button>
@@ -346,7 +347,7 @@
                           Sluiten
                         </button>
                       </div>
-                      <video class="embed-responsive-item" data-target="#mark-anoniem-contact">
+                      <video class="embed-responsive-item" data-target="#video-anoniem-contact">
                         <source src="video/anoniem-contact.mp4" type="video/mp4">
                         <source src="video/anoniem-contact.webm" type="video/webm">
                         <source src="video/anoniem-contact.ogv" type="video/ogg">
@@ -356,8 +357,8 @@
                   </div>
                 </div>
               </li>
-              <li>
-                <div id="mark-stille-held" class="featured-list-icon">
+              <li id="video-stille-held">
+                <div class="featured-list-icon">
                   <span class="icon icon-users"></span>
                 </div>
                 <div class="container">
@@ -368,9 +369,9 @@
                         <small class="text-muted">Zoek niet de publicitet maar blijf de stille held achter het nieuws.</small>
                       </h2>
                     </div>
-                    <div id="video-stille-held" class="col embed-responsive embed-responsive-16by9">
+                    <div class="col embed-responsive embed-responsive-16by9">
                       <div class="poster-controls embed-responsive-overlay opaque d-flex justify-content-center align-items-center">
-                        <button class="btn btn-outline-light btn-pill text-white video-toggle" data-target="#video-stille-held" data-attributes="pause,volume">
+                        <button class="btn btn-outline-light btn-pill text-white video-toggle animated infinite pulse" data-target="#video-stille-held" data-attributes="pause,volume">
                           <span class="icon icon-controller-play"></span>
                           Play
                         </button>
@@ -381,7 +382,7 @@
                           Sluiten
                         </button>
                       </div>
-                      <video class="embed-responsive-item" data-target="#mark-stille-held">
+                      <video class="embed-responsive-item" data-target="#video-stille-held">
                         <source src="video/stille-held.mp4" type="video/mp4">
                         <source src="video/stille-held.webm" type="video/webm">
                         <source src="video/stille-held.ogv" type="video/ogg">
