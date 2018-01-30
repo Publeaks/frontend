@@ -1,11 +1,9 @@
 .app {
   background: url("img/pattern.png") repeat;
-  max-width: calc(100vw);
-  width: 540px}
-
+  max-width: calc(100vw);}
 .app > div.buttons, .app > div.controls {
   max-width: calc(100vw - 20px);
-  width: 520px; }
+  width: 720px; }
 /** Optional controls
 .app > div.buttons, .app > div.controls > div.scroll {
   display: none; }
