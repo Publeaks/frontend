@@ -1,6 +1,7 @@
 .app {
   background: url("img/pattern.png") repeat;
-  max-width: calc(100vw);}
+  max-width: calc(100vw);
+  width: 920px;}
 .app > div.buttons, .app > div.controls {
   max-width: calc(100vw - 20px);
   width: 720px; }
