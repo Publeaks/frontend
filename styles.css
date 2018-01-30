@@ -1,3 +1,7 @@
+body {
+  min-width: 960px;
+}
+
 #jumbotron {
   height: calc(100vh - 86px);
   min-height: 456px;
@@ -22,7 +26,6 @@
 }
 
 .navbar-brand {
-  height: 86px;
   margin-top: -20px;
   margin-bottom: -20px;
   margin-left: -14px;

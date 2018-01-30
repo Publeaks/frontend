@@ -125,12 +125,12 @@
         fscreen.exitFullscreen();
       } else {
         var target = $($(evt.delegateTarget).attr("data-target"))
-          .find("div.embed-responsive");
-        var attrs = $(evt.delegateTarget).attr("data-attributes").split(",");
+          .find(".embed-responsive");
         var video = target.find("video")[0]
-          , posterControls  = target.find(".poster-controls")
-          , fullscreenControls  = target.find(".fullscreen-controls")
-          , div = target[0]
+          , posterControls = target.find(".poster-controls")
+          , fullscreenControls = target.find(".fullscreen-controls")
+          , div = target[0];
+        var attrs = $(video).attr("data-attributes").split(",");
         var handler = function () {
           if (fscreen.fullscreenElement !== null) {
             posterControls.addClass("invisible");
@@ -177,7 +177,7 @@
 
     // Start the background video with volume down
     (function(){
-      var video = $("#video-welkom video")[0];
+      var video = $("#jumbotron video")[0];
       video.volume = 0.0;
       video.loop = true;
       video.play();

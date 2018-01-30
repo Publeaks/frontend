@@ -34,16 +34,18 @@
       </div>
     </div>
 
-    <div id="jumbotron" class="block block-inverse text-center">
-      <div class="block-foreground">
-        <h1 class="block-title">Publeaks</h1>
-        <h2>Veilig en anoniem informatie delen met de pers</h2>
-        <button class="btn btn-outline-light btn-pill btn-lg mt-5 video-toggle animated infinite pulse" data-target="#video-welkom" data-attributes="rewind,loop,volume">
-          <span class="icon icon-controller-play"></span>
-          Bekijk de video
-        </button>
+    <div id="jumbotron" class="block block-inverse">
+      <div class="block-foreground d-flex h-100 align-middle">
+        <div class="m-auto text-center">
+          <h1 class="block-title">Publeaks</h1>
+          <h2 class="">Veilig en anoniem informatie delen met de pers</h2>
+          <button class="btn btn-outline-light btn-pill btn-lg mt-5 video-toggle animated infinite pulse" data-target="#jumbotron">
+            <span class="icon icon-controller-play"></span>
+            Bekijk de video
+          </button>
+        </div>
       </div>
-      <div id="video-welkom" class="block-background embed-responsive embed-responsive-16by9">
+      <div class="block-background embed-responsive embed-responsive-16by9">
         <div class="poster-controls embed-responsive-overlay opaque"></div>
         <div class="fullscreen-controls invisible embed-responsive-overlay transparent d-flex justify-content-end align-items-start">
           <button class="btn btn-outline-primary btn-pill btn-lg m-3 video-toggle">
@@ -51,7 +53,7 @@
             Sluiten
           </button>
         </div>
-        <video class="embed-responsive-item">
+        <video class="embed-responsive-item" data-attributes="rewind,loop,volume">
     		  <source src="video/algemeen.mp4" type="video/mp4">
     		  <source src="video/algemeen.webm" type="video/webm">
     		  <source src="video/algemeen.ogv" type="video/ogg">
@@ -60,17 +62,17 @@
       </div>
     </div>
 
-    <nav id="navbar" class="navbar navbar-padded navbar-expand-sm navbar-light bg-light sticky-top">
-      <div class="navbar-brand py-0">
+    <nav id="navbar" class="navbar navbar-padded navbar-expand-lg navbar-light bg-light sticky-top">
+      <div class="navbar-brand d-none d-lg-block py-0">
         <a class="smooth-scrolling" href="#top">
-          <img src="img/logo.png" class="img-fluid mh-100" alt="Publeaks">
+          <img src="img/logo.png" height="86" alt="Publeaks">
         </a>
       </div>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse">
-        <ul class="nav nav-bordered mr-auto">
+        <ul class="nav navbar-nav nav-bordered my-2 my-lg-0">
           <li class="nav-item">
             <a class="smooth-scrolling nav-link" href="#media">Media</a>
           </li>
@@ -87,12 +89,12 @@
             <a class="smooth-scrolling nav-link" href="#about">Over Stichting Publeaks</a>
           </li>
         </ul>
-        <div>
-          <button class="btn btn-outline-primary login">
+        <div class="form-inline ml-auto">
+          <button class="btn btn-outline-primary mr-2 login">
             <span class="icon icon-login"></span>
             Inloggen
           </button>
-          <button class="btn btn-primary upload text-white">
+          <button class="btn btn-primary text-white my-lg-0 upload animated infinite pulse">
             <span class="icon icon-upload"></span>
             Documenten uploaden
           </button>
@@ -122,43 +124,43 @@
             <h2 class="block-title display-4">Wij werken samen met de meest betrouwbare mediapartners.</h2>
           </div>
         </div>
-        <div class="row justify-content-center mt-4">
-          <div class="col-2">
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-4 col-md-2 pt-2 pb-3">
             <img class="img-thumbnail img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
-          <div class="col-2">
+          <div class="col-6 col-sm-4 col-md-2 pt-2 pb-3">
             <img class="img-thumbnail img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
-          <div class="col-2">
+          <div class="col-6 col-sm-4 col-md-2 pt-2 pb-3">
             <img class="img-thumbnail img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
-          <div class="col-2">
+          <div class="col-6 col-sm-4 col-md-2 pt-2 pb-3">
             <img class="img-thumbnail img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
-          <div class="col-2">
+          <div class="col-6 col-sm-4 col-md-2 pt-2 pb-3">
             <img class="img-thumbnail img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
-          <div class="col-2">
+          <div class="col-6 col-sm-4 col-md-2 pt-2 pb-3">
             <img class="img-thumbnail img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
         </div>
-        <div class="row justify-content-center mt-4">
-          <div class="col-2">
+        <div class="row justify-content-center">
+          <div class="col-6 col-sm-4 col-md-2 pt-2 pb-3">
             <img class="img-thumbnail img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
-          <div class="col-2">
+          <div class="col-6 col-sm-4 col-md-2 pt-2 pb-3">
             <img class="img-thumbnail img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
-          <div class="col-2">
+          <div class="col-6 col-sm-4 col-md-2 pt-2 pb-3">
             <img class="img-thumbnail img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
-          <div class="col-2">
+          <div class="col-6 col-sm-4 col-md-2 pt-2 pb-3">
             <img class="img-thumbnail img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
-          <div class="col-2">
+          <div class="col-6 col-sm-4 col-md-2 pt-2 pb-3">
             <img class="img-thumbnail img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
-          <div class="col-2">
+          <div class="col-6 col-sm-4 col-md-2 pt-2 pb-3">
             <img class="img-thumbnail img-fluid" src="https://placehold.it/200x200/fff/333" alt="">
           </div>
         </div>
@@ -229,7 +231,7 @@
           </div>
         </div>
         <div class="row mt-5">
-          <div class="col">
+          <div class="col-12 col-sm-4 py-3">
             <div class="card">
               <img class="card-img-top" src="img/iets-belangrijks-vertellen.jpg" alt="Iets belangrijks vertellen">
               <div class="card-body">
@@ -242,7 +244,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-4 py-3">
             <div class="card">
               <img class="card-img-top" src="img/stille-held-achter-het-nieuws.jpg" alt="Stille held achter het nieuws">
               <div class="card-body">
@@ -255,7 +257,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-sm-4 py-3">
             <div class="card">
               <img class="card-img-top" src="img/niet-alleen-staan.jpg" alt="Niet alleen staan">
               <div class="card-body">
@@ -280,45 +282,44 @@
           </div>
         </div>
         <div class="row justify-content-between align-items-center mt-5">
-          <div class="col-4">
+          <div class="col-12 col-lg-4 mb-5">
             <h3 class="reset-line-height">
               <strong class="text-primary">Leer in drie simpele stappen hoe je ongezien van Publeaks gebruik kan maken.</strong>
               <small>Bekijk de videos om  meer de weten te komen over privacy en anonimiteit online.</small>
             </h3>
           </div>
-          <div class="col-7">
+          <div class="col-12 col-lg-8">
             <ul class="featured-list featured-list-bordered">
               <li id="video-veiligheid" class="mb-4">
                 <div class="featured-list-icon">
                   <span class="icon icon-shield"></span>
                 </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <h2>
-                        Veiligheid.
-                        <small class="text-muted">Publeaks zorgt ervoor dat je communicatie altijd veilig verloopt.</small>
-                      </h2>
+                <div class="media">
+                  <div class="media-body">
+                    <h2>
+                      Veiligheid.
+                      <small class="text-muted">Publeaks zorgt ervoor dat je communicatie altijd veilig verloopt.</small>
+                    </h2>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9 w-50">
+                    <div class="poster-controls embed-responsive-overlay opaque d-flex justify-content-center align-items-center">
+                      <button class="btn btn-outline-light btn-pill text-white video-toggle animated infinite pulse" data-target="#video-veiligheid" data-attributes="pause,volume">
+                        <span class="icon icon-controller-play"></span>
+                        Play
+                      </button>
                     </div>
-                    <div class="col embed-responsive embed-responsive-16by9">
-                      <div class="poster-controls embed-responsive-overlay opaque d-flex justify-content-center align-items-center">
-                        <button class="btn btn-outline-light btn-pill text-white video-toggle animated infinite pulse" data-target="#video-veiligheid" data-attributes="pause,volume">
-                          <span class="icon icon-controller-play"></span>
-                          Play
-                        </button>
-                      </div>
-                      <div class="fullscreen-controls invisible embed-responsive-overlay transparent d-flex justify-content-end align-items-start">
-                        <button class="btn btn-outline-primary btn-pill btn-lg m-3 video-toggle">
-                          <span class="icon icon-controller-paus"></span>
-                          Sluiten
-                        </button>
-                      </div>
-                      <video class="embed-responsive-item" data-target="#video-veiligheid">
-                        <source src="video/veiligheid.mp4" type="video/mp4">
-                        <source src="video/veiligheid.webm" type="video/webm">
-                        <source src="video/veiligheid.ogv" type="video/ogg">
-                        Your browser does not support the video tag.
-                      </video>
+                    <div class="fullscreen-controls invisible embed-responsive-overlay transparent d-flex justify-content-end align-items-start">
+                      <button class="btn btn-outline-primary btn-pill btn-lg m-3 video-toggle">
+                        <span class="icon icon-controller-paus"></span>
+                        Sluiten
+                      </button>
+                    </div>
+                    <video class="embed-responsive-item" data-target="#video-veiligheid" data-attributes="pause,volume">
+                      <source src="video/veiligheid.mp4" type="video/mp4">
+                      <source src="video/veiligheid.webm" type="video/webm">
+                      <source src="video/veiligheid.ogv" type="video/ogg">
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </li>
@@ -326,34 +327,32 @@
                 <div class="featured-list-icon">
                   <span class="icon icon-fingerprint"></span>
                 </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <h2>
-                        Anoniem contact.
-                        <small class="text-muted">Het waarborgen van jouw privacy is van groot belang.</small>
-                      </h2>
+                <div class="media">
+                  <div class="media-body">
+                    <h2>
+                      Anoniem contact.
+                      <small class="text-muted">Het waarborgen van jouw privacy is van groot belang.</small>
+                    </h2>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9 w-50">
+                    <div class="poster-controls embed-responsive-overlay opaque d-flex justify-content-center align-items-center">
+                      <button class="btn btn-outline-light btn-pill text-white video-toggle animated infinite pulse" data-target="#video-anoniem-contact">
+                        <span class="icon icon-controller-play"></span>
+                        Play
+                      </button>
                     </div>
-                    <div class="col embed-responsive embed-responsive-16by9">
-                      <div class="poster-controls embed-responsive-overlay opaque d-flex justify-content-center align-items-center">
-                        <button class="btn btn-outline-light btn-pill text-white video-toggle animated infinite pulse" data-target="#video-anoniem-contact" data-attributes="pause,volume">
-                          <span class="icon icon-controller-play"></span>
-                          Play
-                        </button>
-                      </div>
-                      <div class="fullscreen-controls invisible embed-responsive-overlay transparent d-flex justify-content-end align-items-start">
-                        <button class="btn btn-outline-primary btn-pill btn-lg m-3 video-toggle">
-                          <span class="icon icon-controller-paus"></span>
-                          Sluiten
-                        </button>
-                      </div>
-                      <video class="embed-responsive-item" data-target="#video-anoniem-contact">
-                        <source src="video/anoniem-contact.mp4" type="video/mp4">
-                        <source src="video/anoniem-contact.webm" type="video/webm">
-                        <source src="video/anoniem-contact.ogv" type="video/ogg">
-                        Your browser does not support the video tag.
-                      </video>
+                    <div class="fullscreen-controls invisible embed-responsive-overlay transparent d-flex justify-content-end align-items-start">
+                      <button class="btn btn-outline-primary btn-pill btn-lg m-3 video-toggle">
+                        <span class="icon icon-controller-paus"></span>
+                        Sluiten
+                      </button>
                     </div>
+                    <video class="embed-responsive-item" data-target="#video-anoniem-contact" data-attributes="pause,volume">
+                      <source src="video/anoniem-contact.mp4" type="video/mp4">
+                      <source src="video/anoniem-contact.webm" type="video/webm">
+                      <source src="video/anoniem-contact.ogv" type="video/ogg">
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </li>
@@ -361,34 +360,32 @@
                 <div class="featured-list-icon">
                   <span class="icon icon-users"></span>
                 </div>
-                <div class="container">
-                  <div class="row">
-                    <div class="col">
-                      <h2>
-                        Stille held.
-                        <small class="text-muted">Zoek niet de publicitet maar blijf de stille held achter het nieuws.</small>
-                      </h2>
+                <div class="media">
+                  <div class="media-body">
+                    <h2>
+                      Stille held.
+                      <small class="text-muted">Zoek niet de publicitet maar blijf de stille held achter het nieuws.</small>
+                    </h2>
+                  </div>
+                  <div class="embed-responsive embed-responsive-16by9 w-50">
+                    <div class="poster-controls embed-responsive-overlay opaque d-flex justify-content-center align-items-center">
+                      <button class="btn btn-outline-light btn-pill text-white video-toggle animated infinite pulse" data-target="#video-stille-held">
+                        <span class="icon icon-controller-play"></span>
+                        Play
+                      </button>
                     </div>
-                    <div class="col embed-responsive embed-responsive-16by9">
-                      <div class="poster-controls embed-responsive-overlay opaque d-flex justify-content-center align-items-center">
-                        <button class="btn btn-outline-light btn-pill text-white video-toggle animated infinite pulse" data-target="#video-stille-held" data-attributes="pause,volume">
-                          <span class="icon icon-controller-play"></span>
-                          Play
-                        </button>
-                      </div>
-                      <div class="fullscreen-controls invisible embed-responsive-overlay transparent d-flex justify-content-end align-items-start">
-                        <button class="btn btn-outline-primary btn-pill btn-lg m-3 video-toggle">
-                          <span class="icon icon-controller-paus"></span>
-                          Sluiten
-                        </button>
-                      </div>
-                      <video class="embed-responsive-item" data-target="#video-stille-held">
-                        <source src="video/stille-held.mp4" type="video/mp4">
-                        <source src="video/stille-held.webm" type="video/webm">
-                        <source src="video/stille-held.ogv" type="video/ogg">
-                        Your browser does not support the video tag.
-                      </video>
+                    <div class="fullscreen-controls invisible embed-responsive-overlay transparent d-flex justify-content-end align-items-start">
+                      <button class="btn btn-outline-primary btn-pill btn-lg m-3 video-toggle">
+                        <span class="icon icon-controller-paus"></span>
+                        Sluiten
+                      </button>
                     </div>
+                    <video class="embed-responsive-item" data-target="#video-stille-held" data-attributes="pause,volume">
+                      <source src="video/stille-held.mp4" type="video/mp4">
+                      <source src="video/stille-held.webm" type="video/webm">
+                      <source src="video/stille-held.ogv" type="video/ogg">
+                      Your browser does not support the video tag.
+                    </video>
                   </div>
                 </div>
               </li>
@@ -411,7 +408,7 @@
           </div>
         </div>
         <div class="row justify-content-center mt-5">
-          <div class="col-8">
+          <div class="col col-md-8">
             <div class="callout">
               <div class="callout-content">
                 <strong>Heeft u eerder een tip ingezonden?</strong>
@@ -433,12 +430,12 @@
     <div id="about" class="block block-inverse">
       <div class="container-fluid">
         <div class="row">
-          <div class="col">
+          <div class="col-12">
             <h2 class="block-title">Stichting Publeaks</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col">
+          <div class="col-12 col-md-4">
             <p><strong>Veilig en anoniem informatie delen met de pers</strong></p>
             <p>In iedere samenleving vinden misstanden plaats. Heeft u informatie of kennis van zaken die niet in de haak zijn? Dan brengt Publeaks u in contact met de media. Hoe concreter de informatie, hoe groter de kans dat een journalist ermee aan de slag gaat. Publeaks verbergt de afzender, locatie en andere gegevens. Zo blijft de bron veilig en versterken we samen het controlerend vermogen van de media.</p>
             <p><strong>Over Stichting Publeaks</strong></p>
@@ -446,7 +443,7 @@
             <p>Publeaks maakt het mogelijk voor houders van gevoelige informatie om op een veilige, anonieme en eenvoudige manier in contact te komen met de media. De stichting heeft geen enkele toegang tot de inhoud van documenten of rol in het contact tussen journalist en klokkenluider.</p>
             <p>Door hun deelname aan Publeaks onderschrijven de media (1) de statutaire doelstellingen van Stichting Publeaks en (2) de Code van Bordeaux.</p>
           </div>
-          <div class="col">
+          <div class="col-12 col-md-4">
             <p><strong>Juridisch</strong></p>
             <ol>
               <li>Stichting Publeaks is op geen enkele manier aansprakelijk voor de gevolgen van het delen van enigerlei informatie. De Aanbrenger en ontvangende journalistieke organisatie handelen beiden onder eigen verantwoordelijkheden.</li>
@@ -464,7 +461,7 @@
               <li><a href="https://greenhost.net/" target="_blank">Greenhost</a></li>
             </ul>
           </div>
-          <div class="col">
+          <div class="col-12 col-md-4">
             <p><strong>Adres</strong></p>
             <pre class="text-white">
 Stichting Publeaks
