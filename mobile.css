@@ -7,21 +7,15 @@
   max-width: calc(100vw - 20px);
   width: 520px; }
 /** Optional controls
-.app >div.buttons, .app > div.controls > div.scroll {
+.app > div.buttons, .app > div.controls > div.scroll {
   display: none; }
-  */
-/** Use default scroll behaviour instead
-.app > div.history {
-  height: calc(100% - 50px);
-  overflow-y: scroll; }
   */
 .app > div.history {
   min-height: 100vh;
   padding-bottom: 50px; }
-.app > div.history div.alert {
+.app > div.history > div.media {
   max-width: 80%; }
-.app > div.history > div.notification {
-  margin-bottom: 7px;}
-.app > div.history > div.with-reply {
-  width: 100%;
-}
+.app > div.history > div.media .card {
+  margin-bottom: 14px;
+  margin-left: 10%;
+  margin-right: 10%;}
