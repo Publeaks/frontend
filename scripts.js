@@ -1,6 +1,6 @@
 (function() {
-  // Modified from https://github.com/rafrex/fscreen
-  //   I should wrap this with a module loader
+  // Modified from https://github.com/rafrex/fscreen/blob/v1.0.2/src/index.js
+  //   I should like to wrap this with a module loader
   var fscreen = (function () {
     const key = {
       fullscreenEnabled: 0,
@@ -186,6 +186,7 @@
     // Register smooth-scrolling events
     //   can I normalize for scroll speed rather than time?
     $(".smooth-scrolling").click(function(evt) {
+      evt.preventDefault();
       var target = $(evt.delegateTarget).attr("href");
       $("html, body").animate(
         { scrollTop: $(target).offset().top
