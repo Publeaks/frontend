@@ -1,6 +1,6 @@
 (function() {
-  // Modified from https://github.com/rafrex/fscreen
-  //   I should wrap this with a module loader
+  // Modified from https://github.com/rafrex/fscreen/blob/v1.0.2/src/index.js
+  //   I should like to wrap this with a module loader
   var fscreen = (function () {
     const key = {
       fullscreenEnabled: 0,
@@ -67,11 +67,11 @@
   })();
 
   // Check Tor status
-  let secureserver = "https://secure.publeaks.nl"
-    , securereceipt = "https://secure.publeaks.nl/#/receipt"
+  let secureserver = "https://secure.publeaks.nl/#/submission?lang=nl&context=ef6db39c-e913-4abf-bc17-1ec21b78fead&contexts_selectable=false"
+    , securereceipt = "https://secure.publeaks.nl/#/receipt?lang=nl"
     , checktor = "https://secure.publeaks.nl/checktor"
-    , hiddenserver = "http://5karyquenden4d6k.onion"
-    , hiddenreceipt = "http://5karyquenden4d6k.onion/#/receipt";
+    , hiddenserver = "http://5karyquenden4d6k.onion/#/submission?lang=nl&context=ef6db39c-e913-4abf-bc17-1ec21b78fead&contexts_selectable=false"
+    , hiddenreceipt = "http://5karyquenden4d6k.onion/#/receipt?lang=nl";
   var tor = false;
 
   // I could rewrite this block with JQuery since its precense is guaranteed
@@ -186,6 +186,7 @@
     // Register smooth-scrolling events
     //   can I normalize for scroll speed rather than time?
     $(".smooth-scrolling").click(function(evt) {
+      evt.preventDefault();
       var target = $(evt.delegateTarget).attr("href");
       $("html, body").animate(
         { scrollTop: $(target).offset().top
