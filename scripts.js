@@ -67,11 +67,11 @@
   })();
 
   // Check Tor status
-  let secureserver = "https://secure.publeaks.nl"
-    , securereceipt = "https://secure.publeaks.nl/#/receipt"
+  let secureserver = "https://secure.publeaks.nl/#/submission?lang=nl&context=ef6db39c-e913-4abf-bc17-1ec21b78fead&contexts_selectable=false"
+    , securereceipt = "https://secure.publeaks.nl/#/receipt?lang=nl"
     , checktor = "https://secure.publeaks.nl/checktor"
-    , hiddenserver = "http://5karyquenden4d6k.onion"
-    , hiddenreceipt = "http://5karyquenden4d6k.onion/#/receipt";
+    , hiddenserver = "http://5karyquenden4d6k.onion/#/submission?lang=nl&context=ef6db39c-e913-4abf-bc17-1ec21b78fead&contexts_selectable=false"
+    , hiddenreceipt = "http://5karyquenden4d6k.onion/#/receipt?lang=nl";
   var tor = false;
 
   // I could rewrite this block with JQuery since its precense is guaranteed
