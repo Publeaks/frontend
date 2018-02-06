@@ -104,7 +104,7 @@
       if (tor) {
         window.location.href = hiddenserver;
       } else {
-        $("#security-modal a.btn-danger").attr("href", secureserver);
+        $("#security-modal a.btn-primary").attr("href", secureserver);
         $("#security-modal").modal("show");
       }
     });
@@ -114,7 +114,7 @@
       if (tor) {
         window.location.href = hiddenreceipt;
       } else {
-        $("#security-modal a.btn-danger").attr("href", securereceipt);
+        $("#security-modal a.btn-primary").attr("href", securereceipt);
         $("#security-modal").modal("show");
       }
     });
