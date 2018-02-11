@@ -110,7 +110,8 @@ gulp.task('js', function () {
           ]
         ],
         "plugins": [
-          "transform-es2015-modules-strip"
+          "transform-es2015-modules-strip",
+          "transform-object-rest-spread"
         ]
       }
     ))
