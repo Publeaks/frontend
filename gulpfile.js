@@ -13,6 +13,7 @@ var open         = require('gulp-open')
 var babel        = require('gulp-babel')
 var replace      = require('gulp-replace')
 var wrapper      = require('gulp-wrapper')
+var webpack      = require('webpack-stream')
 
 var Paths = {
   HERE                 : './',
@@ -132,4 +133,17 @@ gulp.task('js-min', ['js'], function () {
       suffix: '.min'
     }))
     .pipe(gulp.dest(Paths.DIST))
+})
+
+gulp.task('app', [], function () {
+  return gulp.src('./scripts.js')
+    .pipe(webpack({
+      // Any configuration options...
+    }))
+    .pipe(uglify())
+    .pipe(rename({
+      basename: 'bundle',
+      suffix: '.min'
+    }))
+    .pipe(gulp.dest('./'))
 })
