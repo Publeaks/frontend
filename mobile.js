@@ -1,10 +1,12 @@
 (function() {
 
-  // Check Tor status
+  // Check Tor status...
   let checktor = "https://secure.publeaks.nl/checktor"
   var tor = false;
 
-  // I could rewrite this block with JQuery since its precense is guaranteed
+  // Taken from:
+  //   https://github.com/globaleaks/Tor2web/blob/master/misc/checktor.js
+  // I could rewrite this using JQuery because its precense is guaranteed
   try {
     if (window.XMLHttpRequest) {
       var xmlhttp = new XMLHttpRequest();
