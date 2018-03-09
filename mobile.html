@@ -30,79 +30,78 @@
     </div>
   </div>
 
+
   <div class="container">
     <div class="row">
       <div class="col-auto m-auto px-0">
         <div class="app px-2 pt-1">
-          <!-- BUTTONS -->
-          <div class="fixed-top m-auto text-center pt-3 buttons">
-            <button class="btn btn-primary btn-pill text-white">
-              <span class="icon icon-forward"></span>
-              Move on
+          <!-- NAV -->
+          <nav class="navbar fixed-top m-auto justify-content-start">
+            <button class="btn btn-sm btn-pill btn-outline-primary animated infinite pulse">
+              <span class="icon icon-chevron-left"></span>
+              1
             </button>
-          </div>
-          <!-- CONTROLS -->
-          <div class="fixed-bottom m-auto pb-1 controls">
-            <!-- SCROLL BEHAVIOUR -->
-            <div class="pb-1 text-center scroll">
-              <button class="btn btn-sm btn-pill btn-secondary">
+            <span class="navbar-brand ml-3">
+              Publeaks chatbot
+            </span>
+            <div class="btn-group ml-auto">
+              <button class="btn btn-sm btn-pill btn-outline-primary">
+                <span class="icon icon-controller-next"></span>
+              </button>
+              <button class="btn btn-sm btn-pill btn-outline-primary">
                 <span class="icon icon-align-bottom"></span>
               </button>
             </div>
+          </nav>
+
+          <!-- CHAT CONTROLS -->
+          <div class="fixed-bottom m-auto pb-1 controls">
             <!-- TEXT INPUT AND MENUS -->
-            <div class="input-group input text-danger">
-              <div class="input-group-btn dropup">
-                <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
-                  <span class="icon icon-menu"></span>
-                </button>
-                <div class="dropdown-menu">
-                  <h6 class="dropdown-header">Publeaks mobile</h6>
-                  <a class="dropdown-item" href="#">
-                    <span class="icon icon-info"></span>
-                    About Stichting Publeaks
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <span class="icon icon-lock"></span>
-                    Security information
-                  </a>
-                  <div class="dropdown-divider"></div>
-                  <h6 class="dropdown-header">Your submission</h6>
-                  <a class="dropdown-item" href="#">
-                    <span class="icon icon-new-message"></span>
-                    New tip-off
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <span class="icon icon-fingerprint"></span>
-                    Continue conversation
-                  </a>
-                  <a class="dropdown-item text-danger" href="#">
-                    <span class="icon icon-trash"></span>
-                    Destroy all data
-                  </a>
-                  <h6 class="dropdown-header">Participants</h6>
-                  <a class="dropdown-item disabled" href="#">
-                    <span class="icon icon-user"></span>
-                    Replying to Marlies Brouwer
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <span class="icon icon-reply"></span>
-                    Reply to&hellip;
-                  </a>
-                  <a class="dropdown-item" href="#">
-                    <span class="icon icon-reply-all"></span>
-                    Reply to all
-                  </a>
+            <div class="input-group">
+              <div class="input-group-prepend">
+                <div class="input-group-btn dropup">
+                  <button class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon icon-menu"></span>
+                  </button>
+                  <div class="dropdown-menu">
+                    <h6 class="dropdown-header">Publeaks mobile</h6>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon icon-info"></span>
+                      About Stichting Publeaks
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon icon-lock"></span>
+                      Security information
+                    </a>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Your submission</h6>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon icon-new-message"></span>
+                      New tip-off
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      <span class="icon icon-fingerprint"></span>
+                      Continue conversation
+                    </a>
+                    <a class="dropdown-item text-danger" href="#">
+                      <span class="icon icon-trash"></span>
+                      Destroy all data
+                    </a>
+                  </div>
                 </div>
               </div>
               <input class="form-control" type="text" placeholder="&hellip;"></input>
-              <div class="input-group-btn">
-                <button class="btn btn-secondary">
-                  <span class="icon icon-camera"></span>
-                </button>
-                <button class="btn btn-primary text-white">
-                  <span class="icon icon-paper-plane"></span>
-                  Send
-                </button>
+              <div class="input-group-append">
+                <div class="btn-group">
+                  <label type="button" class="btn btn-secondary mb-0">
+                    <span class="icon icon-camera"></span>
+                    <input style="display: none" type="file">
+                  </label>
+                  <button class="btn btn-primary text-white">
+                    <span class="icon icon-paper-plane"></span>
+                    Send
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -124,6 +123,17 @@
                 </p>
               </div>
             </div>
+            <div class="media align-self-center ">
+              <div class="media-body">
+                <div class="card border">
+                  <img class="card-img-top" src="img/logo-sm.png">
+                  <div class="card-body">
+                    <h5 class="card-title">Publeaks chatbot</h5>
+                    <h6 class="card-subtitle mb-2 text-muted">Stichting Publeaks</h6>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="media align-self-start">
               <div class="media-body">
                 <p class="alert alert-primary">Hello and welcome to Publeaks mobile!</p>
@@ -139,7 +149,7 @@
                 <div class="card border">
                   <div class="card-body">
                     <h5 class="card-title">Welcome</h5>
-                    <p class="card-text">Please enter your secret words to continue an earlier coversation, or choose from the options below.</p>
+                    <p class="card-text">Please enter your identification word or words to continue an earlier coversation, or choose from the options below.</p>
                   </div>
                   <ul class="list-group list-group-flush">
                     <li class="list-group-item"><a href="#">Publeaks introduction</a></li>
@@ -147,11 +157,6 @@
                     <li class="list-group-item"><a href="#">New tip-off</a></li>
                   </ul>
                 </div>
-              </div>
-            </div>
-            <div class="media align-self-end">
-              <div class="media-body">
-                <p class="alert alert-info">arousal disobey implode postwar relax</p>
               </div>
             </div>
             <div class="media align-self-end">
@@ -228,12 +233,12 @@
             </div>
             <div class="media align-self-start">
               <div class="media-body">
-                <p class="alert alert-primary">If I ask you to identify yourself, use the work <strong>dog</strong>. That's your <a href="#">identification word</a>.</p>
+                <p class="alert alert-primary">If I ask you to identify yourself, use the word <strong>relax</strong>. That's your <a href="#">identification word</a>.</p>
               </div>
             </div>
             <div class="media align-self-start">
               <div class="media-body">
-                <p class="alert alert-primary">When there's reason for panic, use the word <strong>cat</strong> instead. When you use your <a href="#">panic word</a> for identification, I will delete the cookie and destroy all references to you and to our converdation.</p>
+                <p class="alert alert-primary">When there's reason for panic, use the word <strong>arousal</strong> instead. When you use your <a href="#">panic word</a> for identification, I will delete the cookie and destroy all references to you and to our conversation.</p>
               </div>
             </div>
             <div class="media align-self-start">
@@ -411,7 +416,7 @@
             </div>
             <div class="media align-self-start">
               <div class="media-body">
-                <p class="alert alert-primary">We're almost done. Please send me any attachments (photos, images, audio or video clips that you'd like to include with your tip-off.</p>
+                <p class="alert alert-primary">We're almost done. Please send me any attachments (photos, images, audio or video clips) that you'd like to include with your tip-off.</p>
               </div>
             </div>
             <div class="media align-self-start">
@@ -514,15 +519,6 @@
                       In reply to Marlies Brouwer, de Volkskrant
                   </cite>
                 </div>
-              </div>
-            </div>
-            <!-- PRIVATE MESSAGE NOTIFICATION INJECTED INTO HISTORY -->
-            <div class="media align-self-center animated infinite pulse">
-              <div class="media-body">
-                <p class="small text-danger">
-                  <span class="icon icon-reply"></span>
-                  Replying to Marlies Brouwer.
-                </p>
               </div>
             </div>
           </div>
