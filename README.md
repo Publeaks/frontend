@@ -9,3 +9,5 @@ The content of the site is determined by the contents of `nl.lang.json`, which i
 For `partners` and `cases`:
 - You can change the images by adding/removing image files to the relevant folder in the `images` folder, and updating the reference to it in the JSON file.
 - It is also possible to add entries by adding a new key (e.g. `"5":`) with a new `{...}` object that looks like the previous entries
+
+The folder `media` contains the explanatory videos in Dutch and is not in the directory, view them at https://publeaks.nl 
