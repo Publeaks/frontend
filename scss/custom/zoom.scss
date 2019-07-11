@@ -34,6 +34,10 @@ img.zoom-img {
 .zoom-overlay-transitioning {
   cursor: default;
 }
+.zoom-overlay-open .list-group-item:hover,
+.zoom-overlay-open .list-group-item:focus, {
+  z-index: auto;
+}
 
 // reset media body's overflow to visible, for image zoom
 .media,
