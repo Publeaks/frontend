@@ -1,0 +1,206 @@
+{
+  "global-leaks": {
+    "login-url": "",
+    "tip-url": "https://secure.publeaks.nl/#/submission?context=ef6db39c-e913-4abf-bc17-1ec21b78fead&contexts_selectable=false"
+  },
+  "hero": {
+    "title": "Deel informatie met de pers<br/>Veilig en anoniem",
+    "tip": "Deel informatie met de pers<br/>Wacht er niet te lang mee",
+    "subtitle": "Heeft u een misstand waarover u de klok wilt luiden? Via Publeaks kunt u veilig en anoniem informatie lekken naar de pers.",
+    "buttons": {
+      "new": "Een misstand melden",
+      "login": "Inloggen",
+      "share": "Begin met delen"
+    }
+  },
+  "how": {
+    "title": "Zo werkt Publeaks",
+    "text": "De Publeaks website is speciaal ontwikkeld voor klokkenluiders die misstanden in de maatschappij aan de pers willen melden. Journalisten zoeken uw tip tot op de bodem uit terwijl u ongezien blijft.",
+    "steps": {
+      "one": {
+        "title": "Log veilig en anoniem in",
+        "text": "Log in via de Tor browser. Met uw unieke code blijft uw identiteit gewaarborgd."
+      },
+      "two": {
+        "title": "Kies zelf uw ontvangers",
+        "text": "U kiest zelf welke betrouwbare mediapartners toegang krijgen tot uw tip en gedeelde documenten. Uploaden van bestanden, foto's en begeleidende teksten gaat altijd anoniem."
+      },
+      "three": {
+        "title": "Communiceer anoniem over uw tip",
+        "text": "Journalisten kunnen vragen stellen over uw melding. Log daarom af en toe in om vragen anoniem te beantwoorden."
+      }
+    }
+  },
+  "media": {
+    "title": "Kies zelf de ontvanger(s)",
+    "text": "We werken samen met de grootste kranten en mediapartners van Nederland. U kunt zelf kiezen welke media op een beveiligde en anonieme manier uw tip ontvangen.",
+    "partners": {
+      "1":{
+        "title": "1Limburg",
+        "image": "1limburg.png"
+      },
+      "2":{
+        "title": "Algemeen Dagblad",
+        "image": "algemeen-dagblad.png"
+      },
+      "3":{
+        "title": "De Cooperatie",
+        "image": "cooperatie.png"
+      },
+      "5":{
+        "title": "EenVandaag",
+        "image": "eenvandaag.png"
+      },
+      "6":{
+        "title": "De Limburger",
+        "image": "limburger.png"
+      },
+      "7":{
+        "title": "NOS",
+        "image": "nos.png"
+      },
+      "8":{
+        "title": "NRC",
+        "image": "nrc.png"
+      },
+      "9":{
+        "title": "NU.nl",
+        "image": "nunl.png"
+      },
+      "10":{
+        "title": "RTL Nieuws",
+        "image": "rtlnieuws.png"
+      },
+      "11":{
+        "title": "SOMO",
+        "image": "somo.png"
+      },
+      "12":{
+        "title": "Trouw",
+        "image": "trouw.jpg"
+      },
+      "13":{
+        "title": "Tweakers",
+        "image": "tweakers.png"
+      },
+      "14":{
+        "title": "Villamedia",
+        "image": "villamedia.png"
+      },
+      "15":{
+        "title": "De Volkskrant",
+        "image": "volkskrant.png"
+      }
+    }
+  },
+  "why": {
+    "title": "Uw hulp is nodig",
+    "text1": "Een eerlijke samenleving kan niet zonder transparantie en dat kan niet zonder klokkenluiders.",
+    "text2": "Is er iets wat de aandacht van de pers verdient? Heeft u een misstand aan de kaak te stellen of beschikt u over informatie dat tot op de bodem uitgezocht moet worden? Trek aan de bel en meldt het aan journalisten via Publeaks.nl. U als tipgever beschikt over concrete kennis, bewijsmatige documentatie of beeldmateriaal over een onderwerp dat belangrijk is voor de samenleving. Hoe concreter de informatie en bewijzen, hoe groter de kans dat een journalist met uw tip aan de slag gaat."
+  },
+  "safety": {
+    "title": "Een paar tips om anoniem te blijven",
+    "text": "Op internet bent u niet zomaar veilig en anoniem. Met deze tips wel.",
+    "tips": {
+      "one": {
+        "title": "Gebruik Tor",
+        "text": "Leer over Tor en hoe een unieke code uw communicatie via Publeaks veilig maakt."
+      },
+      "two": {
+        "title": "Contact via Publeaks",
+        "text": "Log in om anoniem te communiceren met journalisten over uw gelekte informatie."
+      },
+      "three": {
+        "title": "Blijf een stille held",
+        "text": "Verwijder gelekte documenten en foto's en zoek niet de publiciteit op over uw inzending."
+      }
+    }
+  },
+  "studies": {
+    "title": "Vele anderen gingen u voor",
+    "text": "Deze publicaties waren niet mogelijk geweest zonder informatie die via Publeaks naar buiten kwam:",
+    "case": {
+      "1": {
+        "title": "‘Bedrijven hebben websites als MijnBelastingdienst ontdekt als jachtgrond voor persoonlijke gegevens’",
+        "date": "13 februari 2019",
+        "href": "https://www.volkskrant.nl/nieuws-achtergrond/bedrijven-hebben-websites-als-mijnbelastingdienst-ontdekt-als-jachtgrond-voor-persoonlijke-gegevens~bacd1250/",
+        "image": "digid-website.jpg",
+        "text": "De Volkskrant"
+      },
+      "2": {
+        "title": "‘Al een half jaar een patiëntenstop in ziekenhuis Sneek door verziekte werksfeer’",
+        "date": "4 februari 2019",
+        "href": "https://www.volkskrant.nl/nieuws-achtergrond/al-een-half-jaar-een-patientenstop-in-ziekenhuis-sneek-door-verziekte-werksfeer~bae60563d/",
+        "image": "antonius-ziekenhuis.jpg",
+        "text": "De Volkskrant"
+      },
+      "3": {
+        "title": "‘Tientallen snuffelden ongeoorloofd in medisch dossier Barbie’",
+        "date": "5 april 2018",
+        "href": "https://eenvandaag.avrotros.nl/item/tientallen-snuffelden-ongeoorloofd-in-medisch-dossier-barbie/",
+        "image": "barbie.jpg",
+        "text": "EenVandaag"
+      },
+      "4": {
+        "title": "‘AH-cursus ‘klantprofielen’ haaks op VN-campagne’",
+        "date": "16 januari 2018",
+        "href": "https://eenvandaag.avrotros.nl/item/ah-cursus-klantprofielen-haaks-op-vn-campagne/",
+        "image": "ah-klantprofielen.jpg",
+        "text": "EenVandaag"
+      }
+    }
+  },
+  "about": {
+    "title": "Over Publeaks",
+    "text": "Publeaks is een stichting met als doel het versterken van het controlerend vermogen van de media, het faciliteren en daarmee stimuleren van het delen van informatie met de media en het aanbieden van een platform waarmee veilig en anoniem informatie kan worden gedeeld met de media. Publeaks maakt het mogelijk voor houders van gevoelige informatie om op een veilige, anonieme en eenvoudige manier in contact te komen met de media. De stichting heeft geen enkele toegang tot de inhoud van documenten of rol in het contact tussen journalist en klokkenluider."
+  },
+  "wizard": {
+    "title": "Voordat u verder gaat...",
+    "text": "Veilig uploaden is heel belangrijk let hier goed op!",
+    "text2": "Een melding doen werkt eenvoudig en veilig:",
+    "steps": {
+      "one": {
+        "title": "1. Doe een veilige, anonieme melding",
+        "text": "Inclusief bestanden, documenten, foto’s en eventueel videos."
+      },
+      "two": {
+        "title": "2. Selecteer de pers-instanties bij wie u wilt melden.",
+        "text": "Ze krijgen een bericht dat er een nieuwe melding is gedaan"
+      },
+      "three": {
+        "title": "3. Kom af en toe terug",
+        "text": "De pers kan vragen hebben gesteld over de melding. Kom daarom af en toe terug en bekijk de status van uw melding."
+      }
+    },
+    "buttons": {
+      "back": "← Teruggaan",
+      "proceed": "Ja, ik weet zeker dat...."
+    }
+  },
+  "onion": {
+    "title": "Check!",
+    "text": "Als u zover bent, kopieëer dan onderstaande URL en plak deze in uw Tor Browser.",
+    "url": "http://5karyquenden4d6k.onion",
+    "buttons": {
+      "copyUrl": "Kopiëer",
+      "copySucceeded": "De .onion URL is gekopiëerd naar uw klembord!"
+    }
+  },
+  "safety-checklist": {
+    "title": "Voordat u verder gaat...",
+    "text": "Lees onderstaande checklist zorgvuldig.<br/>Alleen zo luidt u veilig en anoniem de klok.",
+    "button": "Dank je, maar ik ga verder met mijn huidige browser",
+    "checks-danger": {
+      "1": "Download Tor, gratis software dat uw internetverkeer anoniem maakt, van de officiële website voor uw computer, tablet of mobiele telefoon op <a href='https://www.torproject.org/download' target=_new>https://www.torproject.org/download<a/>",
+      "2": "Plak de onderstaande speciale URL van Publeaks in uw Tor browser om sporen van uw communicatie te verbergen."
+    },
+    "checks-warning": {
+      "1": "Maak geen gebruik van het (wi-fi) netwerk van uw bedrijf. Deze kan uw bezoeken aan Publeaks.nl en Tor monitoren.",
+      "2": "Verwijder altijd de documenten en foto's die u heeft gelekt van uw computer of telefoon"
+    },
+    "checks": {
+      "1": "Noem nooit uw echte naam of persoonlijke gegevens als u een misstand meldt via Publeaks",
+      "2": "Deelt u een foto van een misstand? Zet de geo-locatie dienst van uw telefoon uit zodat de foto uw locatie niet prijsgeeft."
+    }
+  }
+}

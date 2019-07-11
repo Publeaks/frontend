@@ -1,0 +1,2 @@
+User-Agent: *
+Sitemap: http://www.publeaks.nl/sitemap.xml
